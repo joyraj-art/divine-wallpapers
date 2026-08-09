@@ -14,7 +14,25 @@
     margin: 0;
     padding: 0;
 }
+.fullscreen-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background: #222;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 12px 10px;
+    margin-top: 8px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
+.fullscreen-btn:hover {
+    background: #333;
+}
 body {
     background: #000;
     color: #fff;
@@ -207,7 +225,30 @@ onkeyup="searchWallpapers()">
 <h2>Latest Wallpapers</h2>
 
 <div class="wallpapers" id="wallpapers">
+<button class="fullscreen-btn"
+onclick="openFullscreen('mahadev-01.jpg')">
+    ⛶ View Fullscreen
+</button>
 
+<button class="fullscreen-btn"
+onclick="openFullscreen('mahadev-cosmic-01.jpg')">
+    ⛶ View Fullscreen
+</button>
+
+<button class="fullscreen-btn"
+onclick="openFullscreen('hanuman-01.jpg')">
+    ⛶ View Fullscreen
+</button>
+
+<button class="fullscreen-btn"
+onclick="openFullscreen('hanuman-02.jpg')">
+    ⛶ View Fullscreen
+</button>
+
+<button class="fullscreen-btn"
+onclick="openFullscreen('shree-ram-01.jpg')">
+    ⛶ View Fullscreen
+</button>
 <!-- Mahadev -->
 
 <div class="card wallpaper" data-category="mahadev" data-name="mahadev">
@@ -358,6 +399,39 @@ function searchWallpapers() {
 }
 
 </script>
+function openFullscreen(image) {
+    const newWindow = window.open("", "_blank");
 
+    newWindow.document.write(`
+        <html>
+        <head>
+            <title>Divine Wallpaper</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+                body {
+                    margin: 0;
+                    background: #000;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100vh;
+                }
+
+                img {
+                    max-width: 100%;
+                    max-height: 100vh;
+                    object-fit: contain;
+                }
+            </style>
+        </head>
+
+        <body>
+            <img src="${image}" alt="Divine Wallpaper">
+        </body>
+        </html>
+    `);
+
+    newWindow.document.close();
+}
 </body>
   </html>
