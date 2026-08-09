@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Divine Wallpapers | HD & AMOLED Wallpapers</title>
+  <meta name="description" content="Download beautiful Mahadev, Hanuman, Shree Ram and AMOLED wallpapers for your phone.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 25px 18px;
+      text-align: center;
+      background: #050505;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .search {
+      padding: 18px;
+      background: #000;
+    }
+
+    .search input {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 25px;
+      border: 1px solid #333;
+      background: #111;
+      color: white;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .categories {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 5px 18px 20px;
+    }
+
+    .category {
+      flex-shrink: 0;
+      border: 1px solid #333;
+      background: #111;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .category.active {
+      background: #fff;
+      color: #000;
+    }
+
+    .section-title {
+      padding: 5px 18px 15px;
+      font-size: 21px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      padding: 0 12px 30px;
+    }
+
+    .card {
+      background: #101010;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #222;
+    }
+
+    .card img {
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-info {
+      padding: 10px;
+    }
+
+    .card-title {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .download {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      background: #fff;
+      color: #000;
+      padding: 9px;
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 15px;
+      color: #777;
+      border-top: 1px solid #222;
+      font-size: 13px;
+    }
+
+    @media (min-width: 700px) {
+      .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1200px;
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🕉️ Divine Wallpapers</h1>
+  <p>HD • 4K • AMOLED • Spiritual Wallpapers</p>
+</header>
+
+<div class="search">
+  <input
+    type="text"
+    id="search"
+    placeholder="Search Mahadev, Hanuman, Shree Ram..."
+    onkeyup="searchWallpapers()"
+  >
+</div>
+
+<div class="categories">
+  <button class="category active" onclick="filterWallpapers('all', this)">All</button>
+  <button class="category" onclick="filterWallpapers('mahadev', this)">Mahadev</button>
+  <button class="category" onclick="filterWallpapers('hanuman', this)">Hanuman</button>
+  <button class="category" onclick="filterWallpapers('ram', this)">Shree Ram</button>
+  <button class="category" onclick="filterWallpapers('amoled', this)">AMOLED</button>
+</div>
+
+<h2 class="section-title">Latest Wallpapers</h2>
+
+<div class="gallery" id="gallery">
+
+  <div class="card" data-category="mahadev" data-name="mahadev">
+    <img src="images/mahadev-01.jpg" alt="Mahadev Wallpaper">
+    <div class="card-info">
+      <div class="card-title">Mahadev</div>
+      <a class="download" href="images/mahadev-01.jpg" download>Download</a>
+    </div>
+  </div>
+
+  <div class="card" data-category="mahadev" data-name="mahadev">
+    <img src="images/mahadev-02.jpg" alt="Mahadev Wallpaper">
+    <div class="card-info">
+      <div class="card-title">Mahadev Night</div>
+      <a class="download" href="images/mahadev-02.jpg" download>Download</a>
+    </div>
+  </div>
+
+  <div class="card" data-category="hanuman" data-name="hanuman bajrangbali">
+    <img src="images/hanuman-01.jpg" alt="Hanuman Wallpaper">
+    <div class="card-info">
+      <div class="card-title">Bajrangbali Hanuman</div>
+      <a class="download" href="images/hanuman-01.jpg" download>Download</a>
+    </div>
+  </div>
+
+  <div class="card" data-category="ram" data-name="shree ram ram">
+    <img src="images/shree-ram-01.jpg" alt="Shree Ram Wallpaper">
+    <div class="card-info">
+      <div class="card-title">Shree Ram</div>
+      <a class="download" href="images/shree-ram-01.jpg" download>Download</a>
+    </div>
+  </div>
+
+  <div class="card" data-category="amoled" data-name="amoled mahadev">
+    <img src="images/amoled-01.jpg" alt="AMOLED Wallpaper">
+    <div class="card-info">
+      <div class="card-title">AMOLED Divine</div>
+      <a class="download" href="images/amoled-01.jpg" download>Download</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Divine Wallpapers<br>
+  Made with devotion 🙏
+</footer>
+
+<script>
+  function filterWallpapers(category, button) {
+    document.querySelectorAll(".category").forEach(btn => {
+      btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    document.querySelectorAll(".card").forEach(card => {
+      if (category === "all" || card.dataset.category === category) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
+
+  function searchWallpapers() {
+    const search = document
+      .getElementById("search")
+      .value
+      .toLowerCase();
+
+    document.querySelectorAll(".card").forEach(card => {
+      const name = card.dataset.name.toLowerCase();
+
+      card.style.display =
+        name.includes(search) ? "block" : "none";
+    });
+  }
+</script>
+
+</body>
+</html>
