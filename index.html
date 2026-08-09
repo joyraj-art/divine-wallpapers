@@ -2,361 +2,740 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Divine Wallpapers | HD & AMOLED</title>
+<title>Divine Wallpapers | Mahadev, Hanuman & Shree Ram Wallpapers</title>
 
-<meta name="description" content="Download beautiful HD, Full HD, 4K and AMOLED spiritual wallpapers of Mahadev, Bajrangbali Hanuman and Shree Ram for free.">
+<meta name="description"
+content="Download free HD, Full HD, 4K and AMOLED spiritual wallpapers of Mahadev, Bajrangbali Hanuman and Shree Ram for your mobile phone.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+href="https://joyraj-art.github.io/divine-wallpapers/">
 
 <style>
+
+/* =========================
+   BASIC
+========================= */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.fullscreen-btn {
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    background: #222;
-    color: #fff;
-    border: 1px solid #444;
-    padding: 12px 10px;
-    margin-top: 8px;
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-}
 
-.fullscreen-btn:hover {
-    background: #333;
-}
 body {
     background: #000;
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
+
+
+/* =========================
+   HEADER
+========================= */
 
 header {
     text-align: center;
-    padding: 28px 15px;
+    padding: 30px 15px;
     border-bottom: 1px solid #222;
 }
 
 .logo {
-    font-size: 34px;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .subtitle {
-    margin-top: 8px;
     color: #999;
-    font-size: 16px;
+    margin-top: 8px;
+    font-size: 15px;
 }
 
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    max-width: 800px;
+    margin: 18px auto;
+    color: #aaa;
+    font-size: 15px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
 .search-box {
-    max-width: 700px;
-    margin: 25px auto 15px;
-    padding: 16px 20px;
-    border: 1px solid #333;
-    border-radius: 35px;
+    max-width: 650px;
+    margin: 22px auto;
     background: #111;
+    border: 1px solid #333;
+    border-radius: 30px;
+    padding: 14px 20px;
 }
 
 .search-box input {
     width: 100%;
+    background: transparent;
     border: none;
     outline: none;
-    background: transparent;
     color: white;
-    font-size: 17px;
+    font-size: 16px;
 }
+
+.search-box input::placeholder {
+    color: #777;
+}
+
+
+/* =========================
+   CATEGORY BUTTONS
+========================= */
 
 .categories {
     display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    padding: 15px;
     justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    overflow-x: auto;
 }
 
 .categories button {
+    border: 1px solid #333;
     background: #111;
     color: white;
-    border: 1px solid #333;
-    padding: 12px 22px;
+    padding: 10px 20px;
     border-radius: 25px;
-    font-size: 15px;
     cursor: pointer;
     white-space: nowrap;
+    font-size: 14px;
 }
 
-.categories button.active,
-.categories button:hover {
+.categories button:hover,
+.categories button.active {
     background: white;
     color: black;
 }
+
+
+/* =========================
+   MAIN
+========================= */
 
 .container {
     max-width: 1100px;
     margin: auto;
-    padding: 20px;
+    padding: 25px 15px;
 }
 
-h2 {
-    font-size: 28px;
+.section-title {
+    font-size: 25px;
     margin-bottom: 20px;
 }
+
+
+/* =========================
+   WALLPAPER GRID
+========================= */
 
 .wallpapers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+    gap: 15px;
 }
+
+
+/* =========================
+   CARD
+========================= */
 
 .card {
     background: #111;
     border: 1px solid #222;
-    border-radius: 18px;
+    border-radius: 16px;
     overflow: hidden;
-    padding-bottom: 14px;
 }
 
 .card img {
+    display: block;
     width: 100%;
     aspect-ratio: 9 / 16;
     object-fit: cover;
-    display: block;
 }
 
+
+/* =========================
+   CARD CONTENT
+========================= */
+
 .card-content {
-    padding: 14px;
+    padding: 12px;
 }
 
 .card h3 {
-    font-size: 19px;
-    margin-bottom: 12px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.download,
+.fullscreen-btn {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 11px 8px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .download {
-    display: block;
-    text-align: center;
-    text-decoration: none;
     background: white;
     color: black;
-    padding: 12px;
-    border-radius: 10px;
-    font-weight: bold;
+    border: none;
 }
 
 .download:hover {
     background: #ddd;
 }
 
+.fullscreen-btn {
+    margin-top: 8px;
+    background: #222;
+    color: white;
+    border: 1px solid #444;
+}
+
+.fullscreen-btn:hover {
+    background: #333;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    max-width: 850px;
+    margin: 45px auto 20px;
+    text-align: center;
+    color: #aaa;
+}
+
+.about h2 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
 footer {
     text-align: center;
-    padding: 40px 20px;
+    padding: 35px 15px;
     margin-top: 40px;
     border-top: 1px solid #222;
     color: #777;
 }
 
-@media (max-width: 600px) {
-    .logo {
-        font-size: 29px;
-    }
+
+/* =========================
+   FULLSCREEN VIEWER
+========================= */
+
+.viewer {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.97);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.viewer img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.close-viewer {
+    position: fixed;
+    top: 15px;
+    right: 18px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #555;
+    background: #222;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 700px) {
 
     .wallpapers {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
-
-    .container {
-        padding: 12px;
-    }
-
-    .card-content {
-        padding: 10px;
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .card h3 {
-        font-size: 16px;
+        font-size: 17px;
     }
 
-    .download {
-        font-size: 14px;
-        padding: 10px;
-    }
 }
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 380px) {
+
+    .logo {
+        font-size: 27px;
+    }
+
+    .wallpapers {
+        gap: 10px;
+    }
+
+    .card-content {
+        padding: 9px;
+    }
+
+    .download,
+    .fullscreen-btn {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+
+}
+
 </style>
 </head>
 
+
 <body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
-<div class="logo">🕉️ Divine Wallpapers</div>
-
-<div class="subtitle">
-HD • 4K • AMOLED • Spiritual Wallpapers
+<div class="logo">
+🕉️ Divine Wallpapers
 </div>
+
+<p class="subtitle">
+HD • Full HD • 4K • AMOLED Spiritual Wallpapers
+</p>
+
+<div class="intro">
+
+<p>
+Discover beautiful spiritual wallpapers featuring
+Mahadev, Bajrangbali Hanuman and Shree Ram.
+Download free wallpapers for your mobile phone.
+</p>
+
+</div>
+
+
+<!-- SEARCH -->
 
 <div class="search-box">
+
 <input
-type="text"
+type="search"
 id="search"
-placeholder="Search Mahadev, Hanuman, Shree Ram..."
-onkeyup="searchWallpapers()">
+placeholder="🔍 Search wallpapers..."
+aria-label="Search wallpapers"
+oninput="searchWallpapers()">
+
 </div>
 
+
+<!-- CATEGORIES -->
+
 <div class="categories">
-<button class="active" onclick="filterWallpapers('all', this)">All</button>
-<button onclick="filterWallpapers('mahadev', this)">Mahadev</button>
-<button onclick="filterWallpapers('hanuman', this)">Hanuman</button>
-<button onclick="filterWallpapers('ram', this)">Shree Ram</button>
+
+<button
+class="active"
+onclick="filterWallpapers('all', this)">
+All
+</button>
+
+<button
+onclick="filterWallpapers('mahadev', this)">
+Mahadev
+</button>
+
+<button
+onclick="filterWallpapers('hanuman', this)">
+Hanuman
+</button>
+
+<button
+onclick="filterWallpapers('ram', this)">
+Shree Ram
+</button>
+
 </div>
 
 </header>
 
+
+<!-- =========================
+     MAIN
+========================= -->
+
 <main class="container">
 
-<h2>Latest Wallpapers</h2>
+<h1 class="section-title">
+Latest Divine Wallpapers
+</h1>
 
-<div class="wallpapers" id="wallpapers">
-<button class="fullscreen-btn"
-onclick="openFullscreen('mahadev-01.jpg')">
-    ⛶ View Fullscreen
-</button>
 
-<button class="fullscreen-btn"
-onclick="openFullscreen('mahadev-cosmic-01.jpg')">
-    ⛶ View Fullscreen
-</button>
+<div class="wallpapers">
 
-<button class="fullscreen-btn"
-onclick="openFullscreen('hanuman-01.jpg')">
-    ⛶ View Fullscreen
-</button>
 
-<button class="fullscreen-btn"
-onclick="openFullscreen('hanuman-02.jpg')">
-    ⛶ View Fullscreen
-</button>
+<!-- =========================
+     MAHADEV 1
+========================= -->
 
-<button class="fullscreen-btn"
-onclick="openFullscreen('shree-ram-01.jpg')">
-    ⛶ View Fullscreen
-</button>
-<!-- Mahadev -->
+<article
+class="card wallpaper"
+data-category="mahadev"
+data-name="mahadev shiva">
 
-<div class="card wallpaper" data-category="mahadev" data-name="mahadev">
-<img src="mahadev-01.jpg" alt="Mahadev Wallpaper">
+<img
+src="mahadev-01.jpg"
+alt="Mahadev Shiva HD mobile wallpaper"
+loading="lazy">
 
 <div class="card-content">
-<h3>Mahadev</h3>
 
-<a class="download"
+<h3>
+Mahadev Shiva Wallpaper
+</h3>
+
+<a
+class="download"
 href="mahadev-01.jpg"
-download="Mahadev-Wallpaper.jpg">
-Download
+download="Mahadev-Shiva-Wallpaper.jpg">
+
+⬇️ Download Wallpaper
+
 </a>
+
+<button
+class="fullscreen-btn"
+onclick="openViewer('mahadev-01.jpg')">
+
+⛶ View Fullscreen
+
+</button>
+
 </div>
-</div>
+
+</article>
 
 
-<!-- Mahadev Cosmic -->
+<!-- =========================
+     MAHADEV COSMIC
+========================= -->
 
-<div class="card wallpaper" data-category="mahadev" data-name="mahadev cosmic">
-<img src="mahadev-cosmic-01.jpg" alt="Mahadev Cosmic Wallpaper">
+<article
+class="card wallpaper"
+data-category="mahadev"
+data-name="mahadev cosmic shiva">
+
+<img
+src="mahadev-cosmic-01.jpg"
+alt="Mahadev Cosmic Shiva 4K wallpaper"
+loading="lazy">
 
 <div class="card-content">
-<h3>Mahadev Cosmic</h3>
 
-<a class="download"
+<h3>
+Mahadev Cosmic Wallpaper
+</h3>
+
+<a
+class="download"
 href="mahadev-cosmic-01.jpg"
 download="Mahadev-Cosmic-Wallpaper.jpg">
-Download
+
+⬇️ Download Wallpaper
+
 </a>
+
+<button
+class="fullscreen-btn"
+onclick="openViewer('mahadev-cosmic-01.jpg')">
+
+⛶ View Fullscreen
+
+</button>
+
 </div>
-</div>
+
+</article>
 
 
-<!-- Hanuman -->
+<!-- =========================
+     HANUMAN 1
+========================= -->
 
-<div class="card wallpaper" data-category="hanuman" data-name="hanuman">
-<img src="hanuman-01.jpg" alt="Hanuman Wallpaper">
+<article
+class="card wallpaper"
+data-category="hanuman"
+data-name="hanuman bajrangbali">
+
+<img
+src="hanuman-01.jpg"
+alt="Bajrangbali Hanuman HD devotional wallpaper"
+loading="lazy">
 
 <div class="card-content">
-<h3>Bajrangbali Hanuman</h3>
 
-<a class="download"
+<h3>
+Bajrangbali Hanuman
+</h3>
+
+<a
+class="download"
 href="hanuman-01.jpg"
-download="Hanuman-Wallpaper.jpg">
-Download
+download="Bajrangbali-Hanuman-Wallpaper.jpg">
+
+⬇️ Download Wallpaper
+
 </a>
+
+<button
+class="fullscreen-btn"
+onclick="openViewer('hanuman-01.jpg')">
+
+⛶ View Fullscreen
+
+</button>
+
 </div>
-</div>
+
+</article>
 
 
-<!-- Hanuman 2 -->
+<!-- =========================
+     HANUMAN 2
+========================= -->
 
-<div class="card wallpaper" data-category="hanuman" data-name="hanuman">
-<img src="hanuman-02.jpg" alt="Hanuman Wallpaper">
+<article
+class="card wallpaper"
+data-category="hanuman"
+data-name="hanuman mahabali">
+
+<img
+src="hanuman-02.jpg"
+alt="Mahabali Hanuman HD spiritual wallpaper"
+loading="lazy">
 
 <div class="card-content">
-<h3>Mahabali Hanuman</h3>
 
-<a class="download"
+<h3>
+Mahabali Hanuman
+</h3>
+
+<a
+class="download"
 href="hanuman-02.jpg"
 download="Mahabali-Hanuman-Wallpaper.jpg">
-Download
+
+⬇️ Download Wallpaper
+
 </a>
+
+<button
+class="fullscreen-btn"
+onclick="openViewer('hanuman-02.jpg')">
+
+⛶ View Fullscreen
+
+</button>
+
 </div>
-</div>
+
+</article>
 
 
-<!-- Shree Ram -->
+<!-- =========================
+     SHREE RAM
+========================= -->
 
-<div class="card wallpaper" data-category="ram" data-name="ram shree ram">
-<img src="shree-ram-01.jpg" alt="Shree Ram Wallpaper">
+<article
+class="card wallpaper"
+data-category="ram"
+data-name="shree ram rama">
+
+<img
+src="shree-ram-01.jpg"
+alt="Shree Ram Lord Rama HD mobile wallpaper"
+loading="lazy">
 
 <div class="card-content">
-<h3>Shree Ram</h3>
 
-<a class="download"
+<h3>
+Shree Ram Wallpaper
+</h3>
+
+<a
+class="download"
 href="shree-ram-01.jpg"
 download="Shree-Ram-Wallpaper.jpg">
-Download
+
+⬇️ Download Wallpaper
+
 </a>
-</div>
-</div>
+
+<button
+class="fullscreen-btn"
+onclick="openViewer('shree-ram-01.jpg')">
+
+⛶ View Fullscreen
+
+</button>
 
 </div>
+
+</article>
+
+
+</div>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about">
+
+<h2>
+About Divine Wallpapers
+</h2>
+
+<p>
+Divine Wallpapers is a free collection of spiritual
+and devotional mobile wallpapers. Explore Mahadev,
+Bajrangbali Hanuman and Shree Ram wallpapers in
+HD, Full HD, 4K and AMOLED-inspired styles.
+</p>
+
+</section>
 
 </main>
 
+
+<!-- =========================
+     FULLSCREEN VIEWER
+========================= -->
+
+<div
+class="viewer"
+id="viewer"
+onclick="closeViewer()">
+
+<button
+class="close-viewer"
+onclick="closeViewer(event)"
+aria-label="Close fullscreen">
+
+×
+</button>
+
+<img
+id="viewerImage"
+src=""
+alt="Full screen wallpaper"
+onclick="event.stopPropagation()">
+
+</div>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
-© 2026 Divine Wallpapers • Free Spiritual Wallpapers
+
+© 2026 Divine Wallpapers
+
+<br>
+
+HD • 4K • AMOLED • Spiritual Wallpapers
+
 </footer>
 
 
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
 <script>
+
+
+/* =========================
+   CATEGORY FILTER
+========================= */
 
 function filterWallpapers(category, button) {
 
-    let cards = document.querySelectorAll(".wallpaper");
+    const buttons =
+        document.querySelectorAll(
+            ".categories button"
+        );
 
-    document.querySelectorAll(".categories button")
-    .forEach(btn => btn.classList.remove("active"));
+    buttons.forEach(function(btn) {
+        btn.classList.remove("active");
+    });
 
     button.classList.add("active");
 
-    cards.forEach(card => {
 
-        if (category === "all" ||
-            card.dataset.category === category) {
+    const cards =
+        document.querySelectorAll(".wallpaper");
+
+
+    cards.forEach(function(card) {
+
+        if (
+            category === "all" ||
+            card.dataset.category === category
+        ) {
 
             card.style.display = "block";
 
@@ -367,23 +746,35 @@ function filterWallpapers(category, button) {
         }
 
     });
+
+
+    document.getElementById("search").value = "";
+
 }
 
 
+/* =========================
+   SEARCH
+========================= */
+
 function searchWallpapers() {
 
-    let search =
-    document.getElementById("search")
-    .value
-    .toLowerCase();
+    const search =
+        document.getElementById("search")
+        .value
+        .toLowerCase()
+        .trim();
 
-    let cards =
-    document.querySelectorAll(".wallpaper");
 
-    cards.forEach(card => {
+    const cards =
+        document.querySelectorAll(".wallpaper");
 
-        let name =
-        card.dataset.name.toLowerCase();
+
+    cards.forEach(function(card) {
+
+        const name =
+            card.dataset.name.toLowerCase();
+
 
         if (name.includes(search)) {
 
@@ -396,42 +787,78 @@ function searchWallpapers() {
         }
 
     });
+
 }
+
+
+/* =========================
+   OPEN FULLSCREEN
+========================= */
+
+function openViewer(image) {
+
+    const viewer =
+        document.getElementById("viewer");
+
+    const viewerImage =
+        document.getElementById("viewerImage");
+
+
+    viewerImage.src = image;
+
+    viewer.style.display = "flex";
+
+
+    document.body.style.overflow = "hidden";
+
+}
+
+
+/* =========================
+   CLOSE FULLSCREEN
+========================= */
+
+function closeViewer(event) {
+
+    if (event) {
+        event.stopPropagation();
+    }
+
+
+    const viewer =
+        document.getElementById("viewer");
+
+
+    viewer.style.display = "none";
+
+
+    document.getElementById("viewerImage").src = "";
+
+
+    document.body.style.overflow = "";
+
+}
+
+
+/* =========================
+   ESC KEY
+========================= */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Escape") {
+
+            closeViewer();
+
+        }
+
+    }
+);
 
 </script>
-function openFullscreen(image) {
-    const newWindow = window.open("", "_blank");
 
-    newWindow.document.write(`
-        <html>
-        <head>
-            <title>Divine Wallpaper</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <style>
-                body {
-                    margin: 0;
-                    background: #000;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    min-height: 100vh;
-                }
 
-                img {
-                    max-width: 100%;
-                    max-height: 100vh;
-                    object-fit: contain;
-                }
-            </style>
-        </head>
-
-        <body>
-            <img src="${image}" alt="Divine Wallpaper">
-        </body>
-        </html>
-    `);
-
-    newWindow.document.close();
-}
 </body>
-  </html>
+    </html>
