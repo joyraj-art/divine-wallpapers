@@ -6,15 +6,16 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="google-site-verification" content="RenCi1pS1T0qYlhycQfXxfcHSO4jEclfJf5mRmgarU8">
+<meta name="google-site-verification"
+content="RenCi1pS1T0qYlhycQfXxfcHSO4jEclfJf5mRmgarU8">
 
-<title>Free HD & 4K Hindu Wallpapers | Mahadev, Hanuman, Shree Ram & Krishna</title>
+<title>Divine Wallpapers | HD, 4K & AMOLED Hindu Wallpapers</title>
 
 <meta name="description"
-content="Download free HD, Full HD, 4K and AMOLED Hindu devotional wallpapers featuring Mahadev, Lord Hanuman, Shree Ram, Sri Krishna and beautiful spiritual artwork for mobile phones.">
+content="Download beautiful free HD, Full HD, 4K and AMOLED Hindu devotional wallpapers featuring Mahadev, Hanuman, Shree Ram and Sri Krishna.">
 
 <meta name="keywords"
-content="Mahadev wallpapers, Shiva wallpapers, Hanuman wallpapers, Bajrangbali wallpapers, Shree Ram wallpapers, Krishna wallpapers, Sri Krishna wallpapers, Hindu devotional wallpapers, 4K wallpapers, HD mobile wallpapers, AMOLED wallpapers">
+content="Mahadev wallpapers, Hanuman wallpapers, Shree Ram wallpapers, Krishna wallpapers, Hindu devotional wallpapers, 4K wallpapers, AMOLED wallpapers, HD mobile wallpapers">
 
 <meta name="robots" content="index, follow">
 
@@ -23,10 +24,14 @@ href="https://joyraj-art.github.io/divine-wallpapers/">
 
 <style>
 
+/* =========================
+   RESET
+========================= */
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -34,190 +39,398 @@ html {
 }
 
 body {
-    background: #000;
+    background: #050505;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
-/* HEADER */
+a {
+    color: inherit;
+}
+
+/* =========================
+   HEADER
+========================= */
 
 header {
-    text-align: center;
-    padding: 30px 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(5,5,5,0.92);
+    backdrop-filter: blur(14px);
+
     border-bottom: 1px solid #222;
 }
 
-.logo {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.subtitle {
-    color: #999;
-    margin-top: 8px;
-}
-
-/* INTRO */
-
-.intro {
-    max-width: 850px;
-    margin: 20px auto;
-    color: #aaa;
-    text-align: center;
-}
-
-.intro h1 {
-    color: #fff;
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-/* NAVIGATION */
-
-.page-navigation {
-    max-width: 1100px;
+.header-inner {
+    max-width: 1200px;
     margin: auto;
-    padding: 10px 5px;
+
+    padding: 15px 18px;
+
     display: flex;
-    justify-content: center;
-    gap: 8px;
-    overflow-x: auto;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
 }
 
-.page-navigation a {
-    flex-shrink: 0;
-    display: inline-block;
-    padding: 9px 15px;
-    border: 1px solid #333;
-    border-radius: 22px;
-    background: #111;
-    color: #fff;
+.logo {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
 }
 
-.page-navigation a:hover {
+.logo span {
+    color: #aaa;
+    font-size: 12px;
+    display: block;
+    font-weight: normal;
+    margin-top: 2px;
+}
+
+/* =========================
+   DESKTOP NAV
+========================= */
+
+.top-nav {
+    display: flex;
+    gap: 6px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #aaa;
+
+    padding: 8px 12px;
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+
+.top-nav a:hover {
+    color: #fff;
+    background: #151515;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    position: relative;
+
+    max-width: 1200px;
+    min-height: 390px;
+
+    margin: 20px auto 0;
+
+    border-radius: 28px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at 80% 30%, #252525 0%, transparent 35%),
+        radial-gradient(circle at 20% 70%, #181818 0%, transparent 40%),
+        linear-gradient(135deg, #111, #030303 70%);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.9),
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.8)
+        );
+
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 700px;
+
+    padding: 55px 45px;
+}
+
+.hero-badge {
+    display: inline-block;
+
+    padding: 7px 13px;
+
+    border: 1px solid #333;
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.04);
+
+    color: #aaa;
+
+    font-size: 12px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 6vw, 60px);
+    line-height: 1.05;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: #aaa;
+}
+
+.hero p {
+    color: #aaa;
+    max-width: 600px;
+    font-size: 16px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    padding: 12px 18px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    border: 1px solid #333;
+}
+
+.hero-button.primary {
     background: #fff;
     color: #000;
 }
 
-/* SEARCH */
+.hero-button.secondary {
+    background: #111;
+    color: #fff;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 35px 18px;
+}
+
+/* =========================
+   SEARCH
+========================= */
 
 .search-box {
-    max-width: 650px;
-    margin: 20px auto;
-    padding: 14px 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+
     background: #111;
-    border: 1px solid #333;
-    border-radius: 30px;
+
+    border: 1px solid #292929;
+    border-radius: 18px;
+
+    padding: 14px 18px;
 }
 
 .search-box input {
     width: 100%;
+
+    background: transparent;
     border: none;
     outline: none;
-    background: transparent;
+
     color: #fff;
-    font-size: 16px;
+
+    font-size: 15px;
 }
 
 .search-box input::placeholder {
-    color: #777;
+    color: #666;
 }
 
-/* CATEGORIES */
+/* =========================
+   CATEGORY BAR
+========================= */
 
-.categories {
+.category-bar {
+    max-width: 1000px;
+    margin: 0 auto 35px;
+
     display: flex;
+    flex-wrap: wrap;
+
     justify-content: center;
-    gap: 8px;
-    padding: 10px 5px;
-    overflow-x: auto;
+    align-items: center;
+
+    gap: 9px;
 }
 
-.categories button {
-    flex-shrink: 0;
-    border: 1px solid #333;
-    background: #111;
-    color: #fff;
-    padding: 10px 17px;
-    border-radius: 24px;
-    cursor: pointer;
-    font-size: 14px;
+.category-bar a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 15px;
+
+    min-height: 40px;
+
+    border: 1px solid #292929;
+    border-radius: 22px;
+
+    background: #0d0d0d;
+
+    text-decoration: none;
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    transition: 0.2s ease;
 }
 
-.categories button.active,
-.categories button:hover {
+.category-bar a:hover {
     background: #fff;
     color: #000;
+    border-color: #fff;
 }
 
-/* MAIN */
+/* =========================
+   SECTION HEADER
+========================= */
 
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 25px 15px;
-}
+.section-header {
+    display: flex;
 
-.section-title {
-    font-size: 26px;
+    justify-content: space-between;
+    align-items: end;
+
     margin-bottom: 20px;
-}
 
-/* WALLPAPER GRID */
-
-.wallpapers {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-/* CARD */
+.section-header h2 {
+    font-size: 27px;
+}
+
+.section-header p {
+    color: #666;
+    font-size: 13px;
+}
+
+/* =========================
+   WALLPAPER GRID
+========================= */
+
+.wallpapers {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+}
+
+/* =========================
+   CARD
+========================= */
 
 .card {
-    background: #111;
-    border: 1px solid #222;
-    border-radius: 16px;
+    position: relative;
+
+    background: #0d0d0d;
+
+    border: 1px solid #202020;
+
+    border-radius: 18px;
+
     overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #444;
 }
 
 .card img {
     display: block;
+
     width: 100%;
+
     aspect-ratio: 9 / 16;
+
     object-fit: cover;
+
     cursor: pointer;
+
+    transition: transform 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.025);
 }
 
 .card-content {
-    padding: 12px;
+    padding: 13px;
 }
 
 .card h2 {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
-/* BUTTONS */
-
-.download,
-.fullscreen-btn {
-    display: block;
-    width: 100%;
-    padding: 11px 8px;
-    border-radius: 9px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-}
+/* =========================
+   BUTTONS
+========================= */
 
 .download {
+    display: block;
+
+    width: 100%;
+
+    padding: 11px;
+
+    border-radius: 10px;
+
     background: #fff;
     color: #000;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .download:hover {
@@ -225,62 +438,132 @@ header {
 }
 
 .fullscreen-btn {
-    margin-top: 8px;
-    background: #222;
+    display: block;
+
+    width: 100%;
+
+    margin-top: 7px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    background: #171717;
+
+    border: 1px solid #303030;
+
     color: #fff;
-    border: 1px solid #444;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
 }
 
 .fullscreen-btn:hover {
-    background: #333;
+    background: #252525;
 }
 
-/* NO RESULTS */
+/* =========================
+   NO RESULTS
+========================= */
 
 .no-results {
     display: none;
+
     text-align: center;
-    padding: 40px 10px;
-    color: #888;
+
+    padding: 50px 10px;
+
+    color: #666;
 }
 
-/* ABOUT */
+/* =========================
+   SEO / ABOUT
+========================= */
 
 .about {
     max-width: 850px;
-    margin: 45px auto 20px;
+
+    margin: 65px auto 20px;
+
+    padding: 30px;
+
+    border: 1px solid #202020;
+
+    border-radius: 20px;
+
+    background: #0a0a0a;
+
     text-align: center;
-    color: #aaa;
 }
 
 .about h2 {
-    color: #fff;
     margin-bottom: 12px;
 }
 
-/* FOOTER */
-
-footer {
-    text-align: center;
-    padding: 35px 15px;
-    margin-top: 40px;
-    border-top: 1px solid #222;
-    color: #777;
+.about p {
+    color: #888;
+    font-size: 14px;
 }
 
-/* FULLSCREEN VIEWER */
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 50px;
+
+    padding: 35px 18px;
+
+    border-top: 1px solid #202020;
+
+    text-align: center;
+
+    color: #666;
+
+    font-size: 13px;
+}
+
+.footer-links {
+    margin-top: 12px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #888;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* =========================
+   FULLSCREEN VIEWER
+========================= */
 
 .viewer {
-    display: none;
     position: fixed;
+
     inset: 0;
+
     z-index: 99999;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.98);
+
+    display: none;
+
     align-items: center;
     justify-content: center;
+
     padding: 20px;
+
+    background: rgba(0,0,0,0.97);
 }
 
 .viewer.active {
@@ -290,26 +573,35 @@ footer {
 .viewer img {
     max-width: 100%;
     max-height: 90vh;
-    width: auto;
-    height: auto;
+
     object-fit: contain;
 }
 
 .close-viewer {
     position: absolute;
+
     top: 15px;
     right: 15px;
+
     width: 45px;
     height: 45px;
+
     border-radius: 50%;
-    border: 1px solid #555;
-    background: #222;
+
+    border: 1px solid #444;
+
+    background: #151515;
+
     color: #fff;
-    font-size: 28px;
+
+    font-size: 27px;
+
     cursor: pointer;
 }
 
-/* DESKTOP */
+/* =========================
+   TABLET / DESKTOP
+========================= */
 
 @media (min-width: 700px) {
 
@@ -319,17 +611,72 @@ footer {
 
 }
 
-/* SMALL MOBILE */
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .top-nav {
+        display: none;
+    }
+
+    .header-inner {
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 360px;
+
+        margin: 10px 10px 0;
+
+        border-radius: 22px;
+    }
+
+    .hero-content {
+        padding: 40px 25px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .category-bar {
+        padding: 0 4px;
+    }
+
+    .category-bar a {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .section-header h2 {
+        font-size: 23px;
+    }
+
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
 
 @media (max-width: 380px) {
 
-    .logo {
-        font-size: 26px;
+    .wallpapers {
+        gap: 9px;
+    }
+
+    .card-content {
+        padding: 9px;
+    }
+
+    .card h2 {
+        font-size: 13px;
     }
 
     .download,
     .fullscreen-btn {
-        font-size: 12px;
+        font-size: 11px;
     }
 
 }
@@ -340,37 +687,130 @@ footer {
 
 <body>
 
+
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
 
-<div class="logo">
+<div class="header-inner">
+
+<a class="logo" href="index.html">
+
 🕉️ Divine Wallpapers
+
+<span>
+HD • 4K • AMOLED • Devotional
+</span>
+
+</a>
+
+<nav class="top-nav">
+
+<a href="mahadev-wallpapers.html">
+🔱 Mahadev
+</a>
+
+<a href="hanuman-wallpapers.html">
+🚩 Hanuman
+</a>
+
+<a href="shree-ram-wallpapers.html">
+🏹 Shree Ram
+</a>
+
+<a href="krishna-wallpapers.html">
+🦚 Krishna
+</a>
+
+<a href="amoled-wallpapers.html">
+🌑 AMOLED
+</a>
+
+</nav>
+
 </div>
 
-<p class="subtitle">
-HD • Full HD • 4K • AMOLED Spiritual Wallpapers
-</p>
+</header>
 
-<div class="intro">
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+✨ FREE DEVOTIONAL WALLPAPERS
+</div>
 
 <h1>
-Free HD & 4K Hindu Mobile Wallpapers
+Your phone.<br>
+Your <span>divine</span> wallpaper.
 </h1>
 
 <p>
-Download beautiful free mobile wallpapers featuring
-Mahadev, Lord Hanuman, Shree Ram, Sri Krishna and Hindu
-devotional art. Explore HD, Full HD, 4K and dark AMOLED
-wallpapers for your phone.
+Explore beautiful HD, 4K and AMOLED Hindu devotional
+wallpapers featuring Mahadev, Hanuman, Shree Ram and
+Sri Krishna.
 </p>
+
+<div class="hero-actions">
+
+<a
+class="hero-button primary"
+href="#wallpapers">
+
+Explore Wallpapers
+
+</a>
+
+<a
+class="hero-button secondary"
+href="krishna-wallpapers.html">
+
+🦚 Krishna Collection
+
+</a>
 
 </div>
 
-<!-- NAVIGATION -->
+</div>
 
-<nav class="page-navigation">
+</section>
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main class="container">
+
+
+<!-- SEARCH -->
+
+<div class="search-box">
+
+<input
+type="search"
+id="search"
+placeholder="🔍 Search Mahadev, Hanuman, Krishna..."
+aria-label="Search wallpapers">
+
+</div>
+
+
+<!-- CATEGORIES -->
+
+<nav
+class="category-bar"
+aria-label="Wallpaper categories">
 
 <a href="index.html">
-🏠 Home
+✨ All
 </a>
 
 <a href="mahadev-wallpapers.html">
@@ -395,73 +835,32 @@ wallpapers for your phone.
 
 </nav>
 
-<!-- SEARCH -->
 
-<div class="search-box">
+<!-- SECTION -->
 
-<input
-type="search"
-id="search"
-placeholder="🔍 Search wallpapers..."
-aria-label="Search wallpapers">
+<section id="wallpapers">
 
-</div>
+<div class="section-header">
 
-<!-- CATEGORIES -->
+<div>
 
-<div class="categories">
-
-<button
-type="button"
-class="active"
-data-category="all">
-All
-</button>
-
-<button
-type="button"
-data-category="mahadev">
-🔱 Mahadev
-</button>
-
-<button
-type="button"
-data-category="hanuman">
-🚩 Hanuman
-</button>
-
-<button
-type="button"
-data-category="ram">
-🏹 Shree Ram
-</button>
-
-<button
-type="button"
-data-category="krishna">
-🦚 Sri Krishna
-</button>
-
-<button
-type="button"
-data-category="devotional">
-🕉️ Devotional
-</button>
-
-</div>
-
-</header>
-
-<main class="container">
-
-<h2 class="section-title">
-Latest Divine Wallpapers
+<h2>
+Latest Wallpapers
 </h2>
+
+<p>
+Fresh devotional wallpapers for your phone
+</p>
+
+</div>
+
+</div>
+
 
 <div class="wallpapers">
 
 
-<!-- ================= MAHADEV ================= -->
+<!-- MAHADEV -->
 
 <article
 class="card wallpaper"
@@ -470,7 +869,7 @@ data-name="mahadev shiva">
 
 <img
 src="mahadev-01.jpg"
-alt="Mahadev Shiva HD mobile wallpaper"
+alt="Mahadev Lord Shiva HD mobile wallpaper"
 loading="lazy"
 onclick="openViewer('mahadev-01.jpg')">
 
@@ -485,7 +884,7 @@ class="download"
 href="mahadev-01.jpg"
 download="Mahadev-Shiva-Wallpaper.jpg">
 
-⬇️ Download Wallpaper
+⬇️ Download
 
 </a>
 
@@ -493,11 +892,12 @@ download="Mahadev-Shiva-Wallpaper.jpg">
 class="fullscreen-btn"
 onclick="openViewer('mahadev-01.jpg')">
 
-⛶ View Fullscreen
+⛶ Fullscreen
 
 </button>
 
 </div>
+
 </article>
 
 
@@ -510,7 +910,7 @@ data-name="mahadev cosmic shiva">
 
 <img
 src="mahadev-cosmic-01.jpg"
-alt="Mahadev Cosmic 4K mobile wallpaper"
+alt="Mahadev Cosmic Shiva 4K wallpaper"
 loading="lazy"
 onclick="openViewer('mahadev-cosmic-01.jpg')">
 
@@ -525,7 +925,7 @@ class="download"
 href="mahadev-cosmic-01.jpg"
 download="Mahadev-Cosmic-Wallpaper.jpg">
 
-⬇️ Download Wallpaper
+⬇️ Download
 
 </a>
 
@@ -533,11 +933,12 @@ download="Mahadev-Cosmic-Wallpaper.jpg">
 class="fullscreen-btn"
 onclick="openViewer('mahadev-cosmic-01.jpg')">
 
-⛶ View Fullscreen
+⛶ Fullscreen
 
 </button>
 
 </div>
+
 </article>
 
 
@@ -550,14 +951,14 @@ data-name="mahadev shiva night dark">
 
 <img
 src="mahadev-shiva-night.jpg"
-alt="Mahadev Shiva night dark mobile wallpaper"
+alt="Mahadev Shiva night dark wallpaper"
 loading="lazy"
 onclick="openViewer('mahadev-shiva-night.jpg')">
 
 <div class="card-content">
 
 <h2>
-Mahadev Shiva Night Wallpaper
+Mahadev Shiva Night
 </h2>
 
 <a
@@ -565,7 +966,7 @@ class="download"
 href="mahadev-shiva-night.jpg"
 download="Mahadev-Shiva-Night-Wallpaper.jpg">
 
-⬇️ Download Wallpaper
+⬇️ Download
 
 </a>
 
@@ -573,15 +974,16 @@ download="Mahadev-Shiva-Night-Wallpaper.jpg">
 class="fullscreen-btn"
 onclick="openViewer('mahadev-shiva-night.jpg')">
 
-⛶ View Fullscreen
+⛶ Fullscreen
 
 </button>
 
 </div>
+
 </article>
 
 
-<!-- MAHADEV GOLD BLACK -->
+<!-- MAHADEV GOLD -->
 
 <article
 class="card wallpaper"
@@ -590,14 +992,14 @@ data-name="mahadev gold black">
 
 <img
 src="mahadev-gold-black.jpg"
-alt="Mahadev gold black dark wallpaper"
+alt="Mahadev gold black AMOLED wallpaper"
 loading="lazy"
 onclick="openViewer('mahadev-gold-black.jpg')">
 
 <div class="card-content">
 
 <h2>
-Mahadev Gold Black Wallpaper
+Mahadev Gold Black
 </h2>
 
 <a
@@ -605,7 +1007,7 @@ class="download"
 href="mahadev-gold-black.jpg"
 download="Mahadev-Gold-Black-Wallpaper.jpg">
 
-⬇️ Download Wallpaper
+⬇️ Download
 
 </a>
 
@@ -613,15 +1015,16 @@ download="Mahadev-Gold-Black-Wallpaper.jpg">
 class="fullscreen-btn"
 onclick="openViewer('mahadev-gold-black.jpg')">
 
-⛶ View Fullscreen
+⛶ Fullscreen
 
 </button>
 
 </div>
+
 </article>
 
 
-<!-- ================= HANUMAN ================= -->
+<!-- HANUMAN -->
 
 <article
 class="card wallpaper"
@@ -637,7 +1040,7 @@ onclick="openViewer('hanuman-01.jpg')">
 <div class="card-content">
 
 <h2>
-Bajrangbali Hanuman Wallpaper
+Bajrangbali Hanuman
 </h2>
 
 <a
@@ -645,7 +1048,7 @@ class="download"
 href="hanuman-01.jpg"
 download="Bajrangbali-Hanuman-Wallpaper.jpg">
 
-⬇️ Download Wallpaper
+⬇️ Download
 
 </a>
 
@@ -653,11 +1056,12 @@ download="Bajrangbali-Hanuman-Wallpaper.jpg">
 class="fullscreen-btn"
 onclick="openViewer('hanuman-01.jpg')">
 
-⛶ View Fullscreen
+⛶ Fullscreen
 
 </button>
 
 </div>
+
 </article>
 
 
@@ -677,7 +1081,7 @@ onclick="openViewer('hanuman-02.jpg')">
 <div class="card-content">
 
 <h2>
-Mahabali Hanuman Wallpaper
+Mahabali Hanuman
 </h2>
 
 <a
@@ -685,7 +1089,7 @@ class="download"
 href="hanuman-02.jpg"
 download="Mahabali-Hanuman-Wallpaper.jpg">
 
-⬇️ Download Wallpaper
+⬇️ Download
 
 </a>
 
@@ -693,11 +1097,12 @@ download="Mahabali-Hanuman-Wallpaper.jpg">
 class="fullscreen-btn"
 onclick="openViewer('hanuman-02.jpg')">
 
-⛶ View Fullscreen
+⛶ Fullscreen
 
 </button>
 
 </div>
+
 </article>
 
 
@@ -710,14 +1115,14 @@ data-name="hanuman jai shri ram">
 
 <img
 src="hanuman-jai-shri-ram.jpg"
-alt="Hanuman Jai Shri Ram devotional mobile wallpaper"
+alt="Hanuman Jai Shri Ram devotional wallpaper"
 loading="lazy"
 onclick="openViewer('hanuman-jai-shri-ram.jpg')">
 
 <div class="card-content">
 
 <h2>
-Hanuman Jai Shri Ram Wallpaper
+Hanuman Jai Shri Ram
 </h2>
 
 <a
@@ -725,7 +1130,7 @@ class="download"
 href="hanuman-jai-shri-ram.jpg"
 download="Hanuman-Jai-Shri-Ram-Wallpaper.jpg">
 
-⬇️ Download Wallpaper
+⬇️ Download
 
 </a>
 
@@ -733,11 +1138,12 @@ download="Hanuman-Jai-Shri-Ram-Wallpaper.jpg">
 class="fullscreen-btn"
 onclick="openViewer('hanuman-jai-shri-ram.jpg')">
 
-⛶ View Fullscreen
+⛶ Fullscreen
 
 </button>
 
 </div>
+
 </article>
 
 
@@ -750,14 +1156,14 @@ data-name="amoled hanuman dark">
 
 <img
 src="amoled-hanuman-01.jpg"
-alt="Dark AMOLED Hanuman mobile wallpaper"
+alt="AMOLED Hanuman dark wallpaper"
 loading="lazy"
 onclick="openViewer('amoled-hanuman-01.jpg')">
 
 <div class="card-content">
 
 <h2>
-AMOLED Hanuman Wallpaper
+AMOLED Hanuman
 </h2>
 
 <a
@@ -765,7 +1171,7 @@ class="download"
 href="amoled-hanuman-01.jpg"
 download="AMOLED-Hanuman-Wallpaper.jpg">
 
-⬇️ Download Wallpaper
+⬇️ Download
 
 </a>
 
@@ -773,15 +1179,16 @@ download="AMOLED-Hanuman-Wallpaper.jpg">
 class="fullscreen-btn"
 onclick="openViewer('amoled-hanuman-01.jpg')">
 
-⛶ View Fullscreen
+⛶ Fullscreen
 
 </button>
 
 </div>
+
 </article>
 
 
-<!-- ================= SHREE RAM ================= -->
+<!-- SHREE RAM -->
 
 <article
 class="card wallpaper"
@@ -790,7 +1197,7 @@ data-name="shree ram rama">
 
 <img
 src="shree-ram-01.jpg"
-alt="Shree Ram Lord Rama HD mobile wallpaper"
+alt="Shree Ram Lord Rama HD wallpaper"
 loading="lazy"
 onclick="openViewer('shree-ram-01.jpg')">
 
@@ -805,7 +1212,7 @@ class="download"
 href="shree-ram-01.jpg"
 download="Shree-Ram-Wallpaper.jpg">
 
-⬇️ Download Wallpaper
+⬇️ Download
 
 </a>
 
@@ -813,11 +1220,12 @@ download="Shree-Ram-Wallpaper.jpg">
 class="fullscreen-btn"
 onclick="openViewer('shree-ram-01.jpg')">
 
-⛶ View Fullscreen
+⛶ Fullscreen
 
 </button>
 
 </div>
+
 </article>
 
 
@@ -830,14 +1238,14 @@ data-name="shree ram sunset">
 
 <img
 src="shri-ram-sunset.jpg"
-alt="Shree Ram sunset devotional mobile wallpaper"
+alt="Shree Ram sunset devotional wallpaper"
 loading="lazy"
 onclick="openViewer('shri-ram-sunset.jpg')">
 
 <div class="card-content">
 
 <h2>
-Shree Ram Sunset Wallpaper
+Shree Ram Sunset
 </h2>
 
 <a
@@ -845,7 +1253,7 @@ class="download"
 href="shri-ram-sunset.jpg"
 download="Shree-Ram-Sunset-Wallpaper.jpg">
 
-⬇️ Download Wallpaper
+⬇️ Download
 
 </a>
 
@@ -853,15 +1261,16 @@ download="Shree-Ram-Sunset-Wallpaper.jpg">
 class="fullscreen-btn"
 onclick="openViewer('shri-ram-sunset.jpg')">
 
-⛶ View Fullscreen
+⛶ Fullscreen
 
 </button>
 
 </div>
+
 </article>
 
 
-<!-- ================= SRI KRISHNA ================= -->
+<!-- KRISHNA -->
 
 <article
 class="card wallpaper"
@@ -870,7 +1279,7 @@ data-name="sri krishna lord krishna">
 
 <img
 src="krishna-01.jpg"
-alt="Sri Krishna HD devotional mobile wallpaper"
+alt="Sri Krishna HD devotional wallpaper"
 loading="lazy"
 onclick="openViewer('krishna-01.jpg')">
 
@@ -885,7 +1294,7 @@ class="download"
 href="krishna-01.jpg"
 download="Sri-Krishna-Wallpaper-01.jpg">
 
-⬇️ Download Wallpaper
+⬇️ Download
 
 </a>
 
@@ -893,11 +1302,12 @@ download="Sri-Krishna-Wallpaper-01.jpg">
 class="fullscreen-btn"
 onclick="openViewer('krishna-01.jpg')">
 
-⛶ View Fullscreen
+⛶ Fullscreen
 
 </button>
 
 </div>
+
 </article>
 
 
@@ -910,14 +1320,14 @@ data-name="sri krishna lord krishna devotional">
 
 <img
 src="krishna-02.jpg"
-alt="Sri Krishna 4K devotional mobile wallpaper"
+alt="Sri Krishna 4K devotional wallpaper"
 loading="lazy"
 onclick="openViewer('krishna-02.jpg')">
 
 <div class="card-content">
 
 <h2>
-Sri Krishna 4K Wallpaper
+Sri Krishna 4K
 </h2>
 
 <a
@@ -925,7 +1335,7 @@ class="download"
 href="krishna-02.jpg"
 download="Sri-Krishna-Wallpaper-02.jpg">
 
-⬇️ Download Wallpaper
+⬇️ Download
 
 </a>
 
@@ -933,15 +1343,16 @@ download="Sri-Krishna-Wallpaper-02.jpg">
 class="fullscreen-btn"
 onclick="openViewer('krishna-02.jpg')">
 
-⛶ View Fullscreen
+⛶ Fullscreen
 
 </button>
 
 </div>
+
 </article>
 
 
-<!-- ================= DEVOTIONAL ================= -->
+<!-- DEVOTIONAL -->
 
 <article
 class="card wallpaper"
@@ -957,7 +1368,7 @@ onclick="openViewer('devotional-01.jpg')">
 <div class="card-content">
 
 <h2>
-Hindu Devotional Wallpaper
+Hindu Devotional
 </h2>
 
 <a
@@ -965,7 +1376,7 @@ class="download"
 href="devotional-01.jpg"
 download="Hindu-Devotional-Wallpaper-01.jpg">
 
-⬇️ Download Wallpaper
+⬇️ Download
 
 </a>
 
@@ -973,11 +1384,12 @@ download="Hindu-Devotional-Wallpaper-01.jpg">
 class="fullscreen-btn"
 onclick="openViewer('devotional-01.jpg')">
 
-⛶ View Fullscreen
+⛶ Fullscreen
 
 </button>
 
 </div>
+
 </article>
 
 
@@ -990,14 +1402,14 @@ data-name="hindu devotional divine">
 
 <img
 src="devotional-02.jpg"
-alt="Hindu devotional 4K mobile wallpaper"
+alt="Hindu devotional 4K wallpaper"
 loading="lazy"
 onclick="openViewer('devotional-02.jpg')">
 
 <div class="card-content">
 
 <h2>
-Hindu Devotional 4K Wallpaper
+Hindu Devotional 4K
 </h2>
 
 <a
@@ -1005,7 +1417,7 @@ class="download"
 href="devotional-02.jpg"
 download="Hindu-Devotional-Wallpaper-02.jpg">
 
-⬇️ Download Wallpaper
+⬇️ Download
 
 </a>
 
@@ -1013,11 +1425,12 @@ download="Hindu-Devotional-Wallpaper-02.jpg">
 class="fullscreen-btn"
 onclick="openViewer('devotional-02.jpg')">
 
-⛶ View Fullscreen
+⛶ Fullscreen
 
 </button>
 
 </div>
+
 </article>
 
 
@@ -1032,29 +1445,36 @@ No wallpapers found.
 
 </div>
 
+</section>
 
-<!-- ABOUT -->
+
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section class="about">
 
 <h2>
-About Divine Wallpapers
+🕉️ About Divine Wallpapers
 </h2>
 
 <p>
-Divine Wallpapers provides free HD, Full HD, 4K and
-AMOLED mobile wallpapers featuring Mahadev, Lord Hanuman,
-Shree Ram, Sri Krishna and Hindu devotional artwork.
-Discover beautiful spiritual wallpapers for your smartphone
-and download your favorites for free.
+Discover free HD, Full HD, 4K and AMOLED Hindu devotional
+wallpapers featuring Mahadev, Lord Hanuman, Shree Ram,
+Sri Krishna and spiritual artwork. Download beautiful
+mobile wallpapers and customize your phone with divine
+imagery.
 </p>
 
 </section>
 
+
 </main>
 
 
-<!-- FULLSCREEN VIEWER -->
+<!-- =========================
+     FULLSCREEN
+========================= -->
 
 <div
 class="viewer"
@@ -1073,192 +1493,5 @@ id="viewerImage"
 src=""
 alt="Wallpaper fullscreen preview">
 
-</div>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-© 2026 Divine Wallpapers
-
-<br>
-
-Free HD • 4K • AMOLED • Devotional Wallpapers
-
-</footer>
-
-
-<script>
-
-/* SEARCH */
-
-const searchInput =
-document.getElementById("search");
-
-const cards =
-document.querySelectorAll(".wallpaper");
-
-const buttons =
-document.querySelectorAll(".categories button");
-
-const noResults =
-document.getElementById("noResults");
-
-let currentCategory = "all";
-
-
-function updateWallpapers() {
-
-const search =
-searchInput.value.toLowerCase().trim();
-
-let count = 0;
-
-
-cards.forEach(function(card) {
-
-const category =
-card.dataset.category;
-
-const name =
-card.dataset.name.toLowerCase();
-
-const categoryMatch =
-currentCategory === "all" ||
-category === currentCategory;
-
-const searchMatch =
-search === "" ||
-name.includes(search);
-
-
-if (categoryMatch && searchMatch) {
-
-card.style.display = "";
-
-count++;
-
-} else {
-
-card.style.display = "none";
-
-}
-
-});
-
-
-if (count === 0) {
-
-noResults.style.display = "block";
-
-} else {
-
-noResults.style.display = "none";
-
-}
-
-}
-
-
-/* CATEGORY FILTER */
-
-buttons.forEach(function(button) {
-
-button.addEventListener("click", function() {
-
-buttons.forEach(function(btn) {
-
-btn.classList.remove("active");
-
-});
-
-button.classList.add("active");
-
-currentCategory =
-button.dataset.category;
-
-updateWallpapers();
-
-});
-
-});
-
-
-/* SEARCH */
-
-searchInput.addEventListener(
-"input",
-updateWallpapers
-);
-
-
-/* FULLSCREEN */
-
-const viewer =
-document.getElementById("viewer");
-
-const viewerImage =
-document.getElementById("viewerImage");
-
-const closeViewer =
-document.getElementById("closeViewer");
-
-
-function openViewer(image) {
-
-viewerImage.src = image;
-
-viewer.classList.add("active");
-
-document.body.style.overflow = "hidden";
-
-}
-
-
-function closeFullscreen() {
-
-viewer.classList.remove("active");
-
-viewerImage.src = "";
-
-document.body.style.overflow = "";
-
-}
-
-
-closeViewer.addEventListener(
-"click",
-closeFullscreen
-);
-
-
-viewer.addEventListener(
-"click",
-function(event) {
-
-if (event.target === viewer) {
-
-closeFullscreen();
-
-}
-
-});
-
-
-document.addEventListener(
-"keydown",
-function(event) {
-
-if (event.key === "Escape") {
-
-closeFullscreen();
-
-}
-
-});
-
-</script>
-
-</body>
-    </html>
+    </div>
+    
