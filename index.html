@@ -1,658 +1,752 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 
 <meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+      content="width=device-width, initial-scale=1.0">
 
-<title>Divine Wallpapers | HD 4K Hindu Wallpapers</title>
+<title>Divine Wallpapers | HD 4K Hindu Devotional Wallpapers</title>
 
 <meta name="description"
-content="Download free HD, Full HD, 4K and AMOLED Hindu devotional wallpapers featuring Mahadev, Hanuman, Shree Ram and Sri Krishna.">
+      content="Download premium HD, Full HD, 4K and AMOLED Hindu devotional wallpapers featuring Mahadev, Hanuman, Shree Ram and Sri Krishna.">
 
-<meta name="robots" content="index, follow">
+<meta name="robots"
+      content="index, follow">
 
 <link rel="canonical"
-href="https://joyraj-art.github.io/divine-wallpapers/">
+      href="https://joyraj-art.github.io/divine-wallpapers/">
 
 <style>
 
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#050505;
-    color:#fff;
+body {
+    background: #050505;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
 }
 
-/* ================= HEADER ================= */
 
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
+/* =====================================================
+   HEADER
+===================================================== */
 
-    background:rgba(5,5,5,.96);
-    border-bottom:1px solid #38200d;
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
-    padding:12px 18px;
+    background: rgba(5, 5, 5, 0.96);
+
+    border-bottom: 1px solid rgba(255, 120, 0, 0.20);
+
+    backdrop-filter: blur(12px);
+
+    padding: 12px 18px;
 }
 
-.nav{
-    max-width:1400px;
-    margin:auto;
+.nav {
+    max-width: 1400px;
+    margin: auto;
 
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
 }
 
-.logo{
-    display:flex;
-    align-items:center;
-    gap:8px;
-
-    font-size:20px;
-    font-weight:800;
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 9px;
 }
 
-.logo-icon{
-    width:32px;
-    height:32px;
+.logo-icon {
+    width: 34px;
+    height: 34px;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    background:linear-gradient(135deg,#ffb300,#ff5a00);
-    border-radius:8px;
+    border-radius: 9px;
 
-    color:#000;
-    font-size:19px;
+    background: linear-gradient(
+        135deg,
+        #ffb300,
+        #ff5b00
+    );
+
+    color: #000;
+
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.subtitle{
-    font-size:9px;
-    color:#999;
-    margin-top:2px;
+.logo-title {
+    font-size: 18px;
+    font-weight: 800;
 }
 
-.nav-links{
-    display:flex;
-    gap:20px;
+.logo-subtitle {
+    color: #777;
+    font-size: 8px;
+    letter-spacing: 1px;
+    margin-top: 3px;
 }
 
-.nav-links a{
-    color:#aaa;
-    text-decoration:none;
-    font-size:12px;
+.nav-links {
+    display: flex;
+    gap: 18px;
 }
 
-.nav-links a:hover{
-    color:#ff8c00;
+.nav-links a {
+    color: #999;
+    text-decoration: none;
+    font-size: 11px;
+    transition: 0.2s;
 }
 
-/* ================= HERO ================= */
+.nav-links a:hover {
+    color: #ff7800;
+}
 
-.hero{
-    max-width:1400px;
-    margin:14px auto 0;
 
-    min-height:285px;
+/* =====================================================
+   HERO
+===================================================== */
 
-    padding:45px 40px;
+.hero {
+    max-width: 1400px;
+    min-height: 300px;
 
-    border:1px solid #4b2a0d;
-    border-radius:22px;
+    margin: 14px auto 0;
+
+    padding: 48px 40px;
+
+    border-radius: 22px;
+
+    border: 1px solid rgba(255, 120, 0, 0.25);
 
     background:
-    radial-gradient(circle at 85% 45%,
-    rgba(255,106,0,.28),
-    transparent 35%),
-    linear-gradient(120deg,#090604,#120a04);
+        radial-gradient(
+            circle at 85% 45%,
+            rgba(255, 100, 0, 0.30),
+            transparent 35%
+        ),
+        linear-gradient(
+            130deg,
+            #080604,
+            #160a03
+        );
 
-    position:relative;
-    overflow:hidden;
+    position: relative;
+    overflow: hidden;
 }
 
-.hero:after{
-    content:"ॐ";
+.hero::after {
+    content: "ॐ";
 
-    position:absolute;
+    position: absolute;
 
-    right:80px;
-    top:45px;
+    right: 70px;
+    top: 40px;
 
-    font-size:150px;
+    font-size: 160px;
 
-    color:rgba(255,120,0,.08);
+    color: rgba(255, 120, 0, 0.07);
+
+    pointer-events: none;
 }
 
-.badge{
-    display:inline-block;
+.badge {
+    display: inline-block;
 
-    padding:7px 12px;
+    padding: 8px 13px;
 
-    border:1px solid #61340e;
-    border-radius:20px;
+    border-radius: 20px;
 
-    color:#ffb347;
+    border: 1px solid rgba(255, 130, 0, 0.35);
 
-    font-size:10px;
+    background: rgba(255, 100, 0, 0.07);
 
-    background:#130b04;
+    color: #ff9a35;
+
+    font-size: 10px;
 }
 
-.hero h1{
-    font-size:48px;
-    line-height:1.08;
+.hero h1 {
+    margin-top: 18px;
 
-    max-width:650px;
+    font-size: clamp(40px, 6vw, 65px);
 
-    margin-top:18px;
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    max-width: 650px;
 }
 
-.orange{
-    color:#ff6800;
+.orange {
+    color: #ff6a00;
 }
 
-.hero p{
-    max-width:650px;
+.hero p {
+    margin-top: 18px;
 
-    margin-top:15px;
+    max-width: 650px;
 
-    color:#999;
+    color: #999;
 
-    font-size:14px;
-    line-height:1.6;
+    font-size: 13px;
+
+    line-height: 1.7;
 }
 
-.hero-buttons{
-    display:flex;
-    gap:10px;
-    margin-top:22px;
+.hero-buttons {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 22px;
+
+    flex-wrap: wrap;
 }
 
-.hero-btn{
-    padding:13px 18px;
+.hero-button {
+    padding: 13px 18px;
 
-    border-radius:9px;
+    border-radius: 9px;
 
-    text-decoration:none;
+    text-decoration: none;
 
-    font-size:12px;
-    font-weight:bold;
+    font-size: 11px;
 
-    background:#ff6800;
-    color:#000;
+    font-weight: bold;
+
+    background: linear-gradient(
+        135deg,
+        #ffad00,
+        #ff6200
+    );
+
+    color: #000;
 }
 
-.hero-btn.secondary{
-    background:#111;
-    color:#fff;
+.hero-button.secondary {
+    background: #111;
 
-    border:1px solid #333;
+    color: #ddd;
+
+    border: 1px solid #333;
 }
 
-/* ================= SEARCH ================= */
 
-.controls{
-    max-width:1400px;
-    margin:18px auto;
+/* =====================================================
+   CONTROLS
+===================================================== */
+
+.controls {
+    max-width: 1400px;
+
+    margin: 18px auto 0;
 }
 
-.search-box{
-    width:100%;
+.search-box {
+    width: 100%;
 
-    padding:15px 18px;
+    padding: 15px 18px;
 
-    border-radius:14px;
+    border-radius: 14px;
 
-    background:#0c0c0c;
+    border: 1px solid #292929;
 
-    border:1px solid #292929;
+    background: #0d0d0d;
 
-    color:white;
+    color: #fff;
 
-    font-size:14px;
+    outline: none;
 
-    outline:none;
+    font-size: 13px;
 }
 
-.search-box:focus{
-    border-color:#ff6800;
+.search-box::placeholder {
+    color: #666;
 }
 
-/* ================= CATEGORIES ================= */
-
-.categories{
-    display:flex;
-
-    gap:8px;
-
-    margin-top:12px;
-
-    overflow-x:auto;
-
-    padding:3px 0 8px;
-
-    scrollbar-width:none;
+.search-box:focus {
+    border-color: #ff7200;
 }
 
-.categories::-webkit-scrollbar{
-    display:none;
+
+/* =====================================================
+   CATEGORIES
+===================================================== */
+
+.categories {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 12px;
+
+    overflow-x: auto;
+
+    padding-bottom: 5px;
+
+    scrollbar-width: none;
 }
 
-.category{
-    flex:0 0 auto;
-
-    border:1px solid #292929;
-
-    background:#0d0d0d;
-
-    color:#aaa;
-
-    padding:9px 14px;
-
-    border-radius:30px;
-
-    cursor:pointer;
-
-    font-size:11px;
-
-    transition:.2s;
+.categories::-webkit-scrollbar {
+    display: none;
 }
 
-.category:hover{
-    border-color:#ff6800;
-    color:#fff;
+.category {
+    flex: 0 0 auto;
+
+    padding: 9px 14px;
+
+    border-radius: 30px;
+
+    border: 1px solid #292929;
+
+    background: #0d0d0d;
+
+    color: #aaa;
+
+    cursor: pointer;
+
+    font-size: 11px;
+
+    transition: 0.2s;
 }
 
-.category.active{
-    background:#ff6800;
-    border-color:#ff6800;
-    color:#000;
-    font-weight:bold;
+.category:hover {
+    border-color: #ff7200;
+
+    color: #fff;
 }
 
-/* ================= SECTION ================= */
+.category.active {
+    background: linear-gradient(
+        135deg,
+        #ffad00,
+        #ff6200
+    );
 
-.section{
-    max-width:1400px;
-    margin:25px auto;
+    color: #000;
+
+    border-color: transparent;
+
+    font-weight: bold;
 }
 
-.section-title{
-    font-size:20px;
-    margin-bottom:4px;
+
+/* =====================================================
+   WALLPAPER SECTION
+===================================================== */
+
+.section {
+    max-width: 1400px;
+
+    margin: 28px auto;
+
 }
 
-.section-subtitle{
-    color:#777;
-    font-size:11px;
-    margin-bottom:14px;
+.section-title {
+    font-size: 22px;
 }
 
-/* ================= GRID ================= */
+.section-subtitle {
+    color: #666;
 
-.wallpaper-grid{
+    font-size: 11px;
 
-    display:grid;
+    margin-top: 5px;
+
+    margin-bottom: 16px;
+}
+
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.wallpaper-grid {
+    display: grid;
 
     grid-template-columns:
-    repeat(4, minmax(0,1fr));
+        repeat(4, minmax(0, 1fr));
 
-    gap:10px;
+    gap: 10px;
 }
 
-/* ================= CARD ================= */
 
-.card{
+/* =====================================================
+   CARD
+===================================================== */
 
-    background:#0c0c0c;
+.card {
+    background: #0c0c0c;
 
-    border:1px solid #242424;
+    border: 1px solid #242424;
 
-    border-radius:12px;
+    border-radius: 13px;
 
-    overflow:hidden;
+    overflow: hidden;
 
-    transition:.25s;
-
+    transition:
+        transform 0.2s,
+        border-color 0.2s;
 }
 
-.card:hover{
+.card:hover {
+    transform: translateY(-3px);
 
-    transform:translateY(-3px);
+    border-color: rgba(255, 120, 0, 0.55);
+}
 
-    border-color:#6d3b12;
+.wallpaper-image {
+    width: 100%;
+
+    aspect-ratio: 9 / 16;
+
+    object-fit: cover;
+
+    display: block;
+
+    cursor: pointer;
+}
+
+.card-info {
+    padding: 9px;
+}
+
+.card-title {
+    font-size: 11px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+.card-category {
+    color: #777;
+
+    font-size: 9px;
+
+    margin-top: 5px;
+}
+
+.card-buttons {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 6px;
+
+    margin-top: 8px;
+}
+
+.btn {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 32px;
+
+    border-radius: 7px;
+
+    border: none;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.download {
+    background: #fff;
+
+    color: #000;
+}
+
+.fullscreen {
+    background: #171717;
+
+    color: #fff;
+
+    border: 1px solid #303030;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+
+/* =====================================================
+   NO RESULTS
+===================================================== */
+
+.no-results {
+    display: none;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    color: #777;
+}
+
+
+/* =====================================================
+   FULLSCREEN VIEWER
+===================================================== */
+
+.viewer {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 99999;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.97);
+
+    padding: 20px;
+}
+
+.viewer.show {
+    display: flex;
+}
+
+.viewer-image {
+    max-width: 94vw;
+
+    max-height: 88vh;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 6px;
 
     box-shadow:
-    0 10px 30px rgba(255,90,0,.08);
+        0 0 50px rgba(255, 100, 0, 0.12);
 }
 
-.wallpaper-image{
+.close-viewer {
+    position: absolute;
 
-    width:100%;
+    top: 16px;
 
-    aspect-ratio:9/16;
+    right: 18px;
 
-    object-fit:cover;
+    width: 44px;
 
-    display:block;
+    height: 44px;
 
-    cursor:pointer;
+    border-radius: 50%;
+
+    border: 1px solid #444;
+
+    background: #151515;
+
+    color: #fff;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    z-index: 2;
 }
 
-.card-info{
-    padding:9px;
+.close-viewer:hover {
+    background: #ff6800;
+
+    color: #000;
 }
 
-.card-title{
+.viewer-download {
+    position: absolute;
 
-    font-size:11px;
+    bottom: 18px;
 
-    font-weight:bold;
+    left: 50%;
 
-    white-space:nowrap;
+    transform: translateX(-50%);
 
-    overflow:hidden;
+    padding: 12px 20px;
 
-    text-overflow:ellipsis;
+    border-radius: 8px;
 
+    background: linear-gradient(
+        135deg,
+        #ffad00,
+        #ff6200
+    );
+
+    color: #000;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: bold;
 }
 
-.card-category{
 
-    color:#777;
+/* =====================================================
+   FOOTER
+===================================================== */
 
-    font-size:9px;
+footer {
+    border-top: 1px solid #24170d;
 
-    margin-top:5px;
+    margin-top: 45px;
+
+    padding: 28px 15px;
+
+    text-align: center;
+
+    color: #666;
+
+    font-size: 11px;
 }
 
-.card-buttons{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:6px;
-
-    margin-top:8px;
+footer strong {
+    color: #ff7200;
 }
 
-.btn{
 
-    padding:9px 5px;
+/* =====================================================
+   MOBILE
+===================================================== */
 
-    border-radius:6px;
+@media (max-width: 700px) {
 
-    border:0;
+    header {
+        padding: 9px 12px;
+    }
 
-    font-size:9px;
+    .nav {
+        gap: 8px;
+    }
 
-    cursor:pointer;
+    .logo-title {
+        font-size: 14px;
+    }
 
-    text-align:center;
+    .logo-icon {
+        width: 29px;
+        height: 29px;
+        font-size: 17px;
+    }
 
-    text-decoration:none;
+    .nav-links {
+        gap: 8px;
+    }
 
-}
+    .nav-links a {
+        font-size: 8px;
+    }
 
-.download{
+    .hero {
+        margin-top: 10px;
 
-    background:#fff;
+        min-height: 270px;
 
-    color:#000;
-}
+        padding: 32px 22px;
 
-.fullscreen{
+        border-radius: 17px;
+    }
 
-    background:#171717;
+    .hero h1 {
+        font-size: 38px;
+    }
 
-    border:1px solid #303030;
+    .hero p {
+        font-size: 11px;
+    }
 
-    color:#fff;
-}
+    .hero::after {
+        right: -15px;
 
-.btn:hover{
-    opacity:.85;
-}
+        font-size: 120px;
+    }
 
-/* ================= NO RESULTS ================= */
+    .controls {
+        margin: 15px 8px 0;
+    }
 
-.no-results{
+    .section {
+        margin: 22px 8px;
+    }
 
-    display:none;
-
-    text-align:center;
-
-    padding:50px 10px;
-
-    color:#777;
-
-    font-size:14px;
-}
-
-/* ================= VIEWER ================= */
-
-.viewer{
-
-    display:none;
-
-    position:fixed;
-
-    inset:0;
-
-    z-index:9999;
-
-    background:rgba(0,0,0,.97);
-
-    align-items:center;
-
-    justify-content:center;
-
-    padding:20px;
-}
-
-.viewer.show{
-    display:flex;
-}
-
-.viewer img{
-
-    max-width:100%;
-    max-height:90vh;
-
-    width:auto;
-    height:auto;
-
-    object-fit:contain;
-
-    border-radius:8px;
-
-    box-shadow:
-    0 0 50px rgba(255,100,0,.12);
-}
-
-.close-viewer{
-
-    position:absolute;
-
-    right:18px;
-    top:15px;
-
-    width:42px;
-    height:42px;
-
-    border-radius:50%;
-
-    border:1px solid #444;
-
-    background:#151515;
-
-    color:white;
-
-    font-size:25px;
-
-    cursor:pointer;
-
-    z-index:2;
-}
-
-.viewer-download{
-
-    position:absolute;
-
-    bottom:18px;
-
-    left:50%;
-
-    transform:translateX(-50%);
-
-    background:#ff6800;
-
-    color:#000;
-
-    padding:12px 20px;
-
-    border-radius:8px;
-
-    text-decoration:none;
-
-    font-weight:bold;
-
-    font-size:12px;
-}
-
-/* ================= FOOTER ================= */
-
-footer{
-
-    border-top:1px solid #24170d;
-
-    margin-top:40px;
-
-    padding:25px 15px;
-
-    text-align:center;
-
-    color:#666;
-
-    font-size:11px;
-}
-
-footer strong{
-    color:#ff6800;
-}
-
-/* ================= MOBILE ================= */
-
-@media(max-width:900px){
-
-    .wallpaper-grid{
+    .wallpaper-grid {
         grid-template-columns:
-        repeat(4,minmax(0,1fr));
+            repeat(2, minmax(0, 1fr));
+
+        gap: 8px;
     }
 
-    .hero{
-        margin:10px 0;
-
-        border-radius:15px;
-
-        padding:32px 24px;
-
-        min-height:260px;
+    .card-info {
+        padding: 8px;
     }
 
-    .hero h1{
-        font-size:38px;
+    .card-title {
+        font-size: 10px;
     }
 
-    .hero:after{
-        right:-20px;
-        font-size:120px;
+    .btn {
+        font-size: 8px;
     }
-
-    .nav-links{
-        gap:10px;
-    }
-}
-
-@media(max-width:600px){
-
-    header{
-        padding:8px 12px;
-    }
-
-    .logo{
-        font-size:15px;
-    }
-
-    .logo-icon{
-        width:27px;
-        height:27px;
-        font-size:15px;
-    }
-
-    .nav-links{
-        gap:8px;
-    }
-
-    .nav-links a{
-        font-size:9px;
-    }
-
-    .hero{
-        padding:28px 22px;
-    }
-
-    .hero h1{
-        font-size:34px;
-    }
-
-    .hero p{
-        font-size:11px;
-    }
-
-    .wallpaper-grid{
-        grid-template-columns:
-        repeat(2,minmax(0,1fr));
-
-        gap:8px;
-    }
-
-    .section{
-        margin:20px 8px;
-    }
-
-    .controls{
-        margin:15px 8px;
-    }
-
-    .section-title{
-        font-size:18px;
-    }
-
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<!-- ================= HEADER ================= -->
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
 <header>
 
@@ -660,31 +754,50 @@ footer strong{
 
 <div>
 
-<div class="logo">
+<div class="logo-area">
 
-<div class="logo-icon">ॐ</div>
-
-Divine Wallpapers
-
+<div class="logo-icon">
+ॐ
 </div>
 
-<div class="subtitle">
+<div>
+
+<div class="logo-title">
+Divine Wallpapers
+</div>
+
+<div class="logo-subtitle">
 BHAGWA • BHAKTI • SANATAN
 </div>
 
 </div>
 
+</div>
+
+</div>
+
+
 <div class="nav-links">
 
-<a href="index.html">⌂ Home</a>
+<a href="index.html">
+⌂ Home
+</a>
 
-<a href="mahadev-wallpapers.html">🔱 Mahadev</a>
+<a href="mahadev-wallpapers.html">
+🔱 Mahadev
+</a>
 
-<a href="hanuman-wallpapers.html">🚩 Hanuman</a>
+<a href="hanuman-wallpapers.html">
+🚩 Hanuman
+</a>
 
-<a href="shree-ram-wallpapers.html">🏹 Shree Ram</a>
+<a href="shree-ram-wallpapers.html">
+🏹 Shree Ram
+</a>
 
-<a href="krishna-wallpapers.html">🦚 Krishna</a>
+<a href="krishna-wallpapers.html">
+🦚 Krishna
+</a>
 
 </div>
 
@@ -693,7 +806,10 @@ BHAGWA • BHAKTI • SANATAN
 </header>
 
 
-<!-- ================= HERO ================= -->
+
+<!-- =====================================================
+     HERO
+===================================================== -->
 
 <section class="hero">
 
@@ -702,23 +818,40 @@ BHAGWA • BHAKTI • SANATAN
 </span>
 
 <h1>
+
 Divinity on<br>
-your <span class="orange">screen.</span>
+
+your
+<span class="orange">
+screen.
+</span>
+
 </h1>
 
 <p>
-Discover premium HD, Full HD, 4K and AMOLED Hindu devotional wallpapers inspired by Mahadev, Hanuman, Shree Ram and Sri Krishna.
+
+Discover premium HD, Full HD, 4K and AMOLED Hindu
+devotional wallpapers inspired by Mahadev, Hanuman,
+Shree Ram and Sri Krishna.
+
 </p>
 
 <div class="hero-buttons">
 
-<a href="#wallpapers" class="hero-btn">
+<a
+href="#wallpapers"
+class="hero-button">
+
 Explore Wallpapers
+
 </a>
 
-<a href="krishna-wallpapers.html"
-class="hero-btn secondary">
+<a
+href="krishna-wallpapers.html"
+class="hero-button secondary">
+
 🦚 Krishna Collection
+
 </a>
 
 </div>
@@ -726,7 +859,10 @@ class="hero-btn secondary">
 </section>
 
 
-<!-- ================= CONTROLS ================= -->
+
+<!-- =====================================================
+     SEARCH + CATEGORIES
+===================================================== -->
 
 <div class="controls">
 
@@ -740,39 +876,73 @@ autocomplete="off"
 
 <div class="categories">
 
-<button class="category active"
+<button
+type="button"
+class="category active"
 data-category="all">
+
 ✨ All
+
 </button>
 
-<button class="category"
+
+<button
+type="button"
+class="category"
 data-category="Mahadev">
+
 🔱 Mahadev
+
 </button>
 
-<button class="category"
+
+<button
+type="button"
+class="category"
 data-category="Hanuman">
+
 🚩 Hanuman
+
 </button>
 
-<button class="category"
+
+<button
+type="button"
+class="category"
 data-category="Shree Ram">
+
 🏹 Shree Ram
+
 </button>
 
-<button class="category"
+
+<button
+type="button"
+class="category"
 data-category="Sri Krishna">
+
 🦚 Sri Krishna
+
 </button>
 
-<button class="category"
+
+<button
+type="button"
+class="category"
 data-category="AMOLED">
+
 🌑 AMOLED
+
 </button>
 
-<button class="category"
+
+<button
+type="button"
+class="category"
 data-category="Devotional">
+
 🪔 Devotional
+
 </button>
 
 </div>
@@ -780,12 +950,23 @@ data-category="Devotional">
 </div>
 
 
-<!-- ================= WALLPAPERS ================= -->
 
-<section class="section" id="wallpapers">
+<!-- =====================================================
+     WALLPAPERS
+===================================================== -->
+
+<section
+class="section"
+id="wallpapers">
 
 <h2 class="section-title">
-Latest <span class="orange">Divine</span> Wallpapers
+
+Latest
+<span class="orange">
+Divine
+</span>
+Wallpapers
+
 </h2>
 
 <p class="section-subtitle">
@@ -793,12 +974,16 @@ Premium devotional wallpapers for your phone
 </p>
 
 
-<div class="wallpaper-grid" id="wallpaperGrid">
+<div
+class="wallpaper-grid"
+id="wallpaperGrid">
 
 
-<!-- MAHADEV -->
 
-<div class="card"
+<!-- ================= MAHADEV ================= -->
+
+<div
+class="card"
 data-category="Mahadev"
 data-title="Mahadev Shiva">
 
@@ -823,24 +1008,33 @@ Mahadev Shiva
 
 <a
 href="mahadev-01.jpg"
-download
+download="mahadev-01.jpg"
 class="btn download">
+
 ⬇ Download
+
 </a>
 
 <button
+type="button"
 class="btn fullscreen"
 data-image="mahadev-01.jpg"
 data-title="Mahadev Shiva">
+
 ⛶ Fullscreen
+
 </button>
 
 </div>
+
 </div>
+
 </div>
 
 
-<div class="card"
+
+<div
+class="card"
 data-category="Mahadev"
 data-title="Mahadev Cosmic">
 
@@ -865,24 +1059,33 @@ Mahadev Cosmic
 
 <a
 href="mahadev-cosmic-01.jpg"
-download
+download="mahadev-cosmic-01.jpg"
 class="btn download">
+
 ⬇ Download
+
 </a>
 
 <button
+type="button"
 class="btn fullscreen"
 data-image="mahadev-cosmic-01.jpg"
 data-title="Mahadev Cosmic">
+
 ⛶ Fullscreen
+
 </button>
 
 </div>
+
 </div>
+
 </div>
 
 
-<div class="card"
+
+<div
+class="card"
 data-category="Mahadev"
 data-title="Mahadev Shiva Night">
 
@@ -907,30 +1110,39 @@ Mahadev Shiva Night
 
 <a
 href="mahadev-shiva-night.jpg"
-download
+download="mahadev-shiva-night.jpg"
 class="btn download">
+
 ⬇ Download
+
 </a>
 
 <button
+type="button"
 class="btn fullscreen"
 data-image="mahadev-shiva-night.jpg"
 data-title="Mahadev Shiva Night">
+
 ⛶ Fullscreen
+
 </button>
 
 </div>
+
 </div>
+
 </div>
 
 
-<div class="card"
+
+<div
+class="card"
 data-category="Mahadev AMOLED"
 data-title="Mahadev Gold Black">
 
 <img
 src="mahadev-gold-black.jpg"
-alt="Mahadev Gold Black AMOLED Wallpaper"
+alt="Mahadev Gold Black Wallpaper"
 class="wallpaper-image"
 loading="lazy"
 >
@@ -949,26 +1161,35 @@ Mahadev Gold Black
 
 <a
 href="mahadev-gold-black.jpg"
-download
+download="mahadev-gold-black.jpg"
 class="btn download">
+
 ⬇ Download
+
 </a>
 
 <button
+type="button"
 class="btn fullscreen"
 data-image="mahadev-gold-black.jpg"
 data-title="Mahadev Gold Black">
+
 ⛶ Fullscreen
+
 </button>
 
 </div>
+
 </div>
+
 </div>
 
 
-<!-- HANUMAN -->
 
-<div class="card"
+<!-- ================= HANUMAN ================= -->
+
+<div
+class="card"
 data-category="Hanuman"
 data-title="Bajrangbali Hanuman">
 
@@ -993,24 +1214,33 @@ Bajrangbali Hanuman
 
 <a
 href="hanuman-01.jpg"
-download
+download="hanuman-01.jpg"
 class="btn download">
+
 ⬇ Download
+
 </a>
 
 <button
+type="button"
 class="btn fullscreen"
 data-image="hanuman-01.jpg"
 data-title="Bajrangbali Hanuman">
+
 ⛶ Fullscreen
+
 </button>
 
 </div>
+
 </div>
+
 </div>
 
 
-<div class="card"
+
+<div
+class="card"
 data-category="Hanuman"
 data-title="Mahabali Hanuman">
 
@@ -1035,24 +1265,33 @@ Mahabali Hanuman
 
 <a
 href="hanuman-02.jpg"
-download
+download="hanuman-02.jpg"
 class="btn download">
+
 ⬇ Download
+
 </a>
 
 <button
+type="button"
 class="btn fullscreen"
 data-image="hanuman-02.jpg"
 data-title="Mahabali Hanuman">
+
 ⛶ Fullscreen
+
 </button>
 
 </div>
+
 </div>
+
 </div>
 
 
-<div class="card"
+
+<div
+class="card"
 data-category="Hanuman Shree Ram"
 data-title="Hanuman Jai Shri Ram">
 
@@ -1077,24 +1316,33 @@ Hanuman Jai Shri Ram
 
 <a
 href="hanuman-jai-shri-ram.jpg"
-download
+download="hanuman-jai-shri-ram.jpg"
 class="btn download">
+
 ⬇ Download
+
 </a>
 
 <button
+type="button"
 class="btn fullscreen"
 data-image="hanuman-jai-shri-ram.jpg"
 data-title="Hanuman Jai Shri Ram">
+
 ⛶ Fullscreen
+
 </button>
 
 </div>
+
 </div>
+
 </div>
 
 
-<div class="card"
+
+<div
+class="card"
 data-category="Hanuman AMOLED"
 data-title="AMOLED Hanuman">
 
@@ -1119,26 +1367,35 @@ AMOLED Hanuman
 
 <a
 href="amoled-hanuman-01.jpg"
-download
+download="amoled-hanuman-01.jpg"
 class="btn download">
+
 ⬇ Download
+
 </a>
 
 <button
+type="button"
 class="btn fullscreen"
 data-image="amoled-hanuman-01.jpg"
 data-title="AMOLED Hanuman">
+
 ⛶ Fullscreen
+
 </button>
 
 </div>
+
 </div>
+
 </div>
 
 
-<!-- KRISHNA -->
 
-<div class="card"
+<!-- ================= KRISHNA ================= -->
+
+<div
+class="card"
 data-category="Sri Krishna"
 data-title="Sri Krishna">
 
@@ -1163,24 +1420,33 @@ Sri Krishna
 
 <a
 href="krishna-01.jpg"
-download
+download="krishna-01.jpg"
 class="btn download">
+
 ⬇ Download
+
 </a>
 
 <button
+type="button"
 class="btn fullscreen"
 data-image="krishna-01.jpg"
 data-title="Sri Krishna">
+
 ⛶ Fullscreen
+
 </button>
 
 </div>
+
 </div>
+
 </div>
 
 
-<div class="card"
+
+<div
+class="card"
 data-category="Sri Krishna"
 data-title="Sri Krishna Divine">
 
@@ -1205,26 +1471,35 @@ Sri Krishna Divine
 
 <a
 href="krishna-02.jpg"
-download
+download="krishna-02.jpg"
 class="btn download">
+
 ⬇ Download
+
 </a>
 
 <button
+type="button"
 class="btn fullscreen"
 data-image="krishna-02.jpg"
 data-title="Sri Krishna Divine">
+
 ⛶ Fullscreen
+
 </button>
 
 </div>
+
 </div>
+
 </div>
 
 
-<!-- SHREE RAM -->
 
-<div class="card"
+<!-- ================= SHREE RAM ================= -->
+
+<div
+class="card"
 data-category="Shree Ram"
 data-title="Shree Ram">
 
@@ -1249,24 +1524,33 @@ Shree Ram
 
 <a
 href="shree-ram-01.jpg"
-download
+download="shree-ram-01.jpg"
 class="btn download">
+
 ⬇ Download
+
 </a>
 
 <button
+type="button"
 class="btn fullscreen"
 data-image="shree-ram-01.jpg"
 data-title="Shree Ram">
+
 ⛶ Fullscreen
+
 </button>
 
 </div>
+
 </div>
+
 </div>
 
 
-<div class="card"
+
+<div
+class="card"
 data-category="Shree Ram"
 data-title="Shri Ram Sunset">
 
@@ -1291,249 +1575,14 @@ Shri Ram Sunset
 
 <a
 href="shri-ram-sunset.jpg"
-download
+download="shri-ram-sunset.jpg"
 class="btn download">
+
 ⬇ Download
+
 </a>
 
 <button
+type="button"
 class="btn fullscreen"
-data-image="shri-ram-sunset.jpg"
-data-title="Shri Ram Sunset">
-⛶ Fullscreen
-</button>
-
-</div>
-</div>
-</div>
-
-
-<!-- DEVOTIONAL -->
-
-<div class="card"
-data-category="Devotional"
-data-title="Divine Devotional">
-
-<img
-src="devotional-01.jpg"
-alt="Hindu Devotional Wallpaper"
-class="wallpaper-image"
-loading="lazy"
->
-
-<div class="card-info">
-
-<div class="card-title">
-Divine Devotional
-</div>
-
-<div class="card-category">
-🪔 Devotional
-</div>
-
-<div class="card-buttons">
-
-<a
-href="devotional-01.jpg"
-download
-class="btn download">
-⬇ Download
-</a>
-
-<button
-class="btn fullscreen"
-data-image="devotional-01.jpg"
-data-title="Divine Devotional">
-⛶ Fullscreen
-</button>
-
-</div>
-</div>
-</div>
-
-
-<div class="card"
-data-category="Devotional"
-data-title="Divine Wallpaper">
-
-<img
-src="devotional-02.jpg"
-alt="Hindu Spiritual Wallpaper"
-class="wallpaper-image"
-loading="lazy"
->
-
-<div class="card-info">
-
-<div class="card-title">
-Divine Wallpaper
-</div>
-
-<div class="card-category">
-🪔 Devotional
-</div>
-
-<div class="card-buttons">
-
-<a
-href="devotional-02.jpg"
-download
-class="btn download">
-⬇ Download
-</a>
-
-<button
-class="btn fullscreen"
-data-image="devotional-02.jpg"
-data-title="Divine Wallpaper">
-⛶ Fullscreen
-</button>
-
-</div>
-</div>
-</div>
-
-
-</div>
-
-<div
-class="no-results"
-id="noResults">
-
-🙏 No wallpapers found.
-
-</div>
-
-</section>
-
-
-<!-- ================= FULLSCREEN VIEWER ================= -->
-
-<div
-class="viewer"
-id="viewer">
-
-<button
-class="close-viewer"
-id="closeViewer">
-×
-</button>
-
-<img
-id="viewerImage"
-src=""
-alt="Wallpaper Preview">
-
-<a
-id="viewerDownload"
-href=""
-download
-class="viewer-download">
-
-⬇ Download Wallpaper
-
-</a>
-
-</div>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-<p>
-<strong>Divine Wallpapers</strong>
-</p>
-
-<p style="margin-top:6px;">
-HD • Full HD • 4K • AMOLED • Hindu Devotional Wallpapers
-</p>
-
-</footer>
-
-
-<!-- ================= JAVASCRIPT ================= -->
-
-<script>
-
-/* ==========================================
-   SEARCH + CATEGORY FILTER
-========================================== */
-
-const searchInput =
-document.getElementById("searchInput");
-
-const cards =
-document.querySelectorAll(".card");
-
-const categoryButtons =
-document.querySelectorAll(".category");
-
-const noResults =
-document.getElementById("noResults");
-
-let selectedCategory = "all";
-
-
-function filterWallpapers(){
-
-    const searchText =
-    searchInput.value
-    .toLowerCase()
-    .trim();
-
-    let visibleCount = 0;
-
-
-    cards.forEach(card => {
-
-        const title =
-        (card.dataset.title || "")
-        .toLowerCase();
-
-        const category =
-        (card.dataset.category || "")
-        .toLowerCase();
-
-
-        const matchesSearch =
-        title.includes(searchText) ||
-        category.includes(searchText);
-
-
-        const matchesCategory =
-        selectedCategory === "all" ||
-        category.includes(
-            selectedCategory.toLowerCase()
-        );
-
-
-        if(matchesSearch && matchesCategory){
-
-            card.style.display = "";
-
-            visibleCount++;
-
-        }else{
-
-            card.style.display = "none";
-
-        }
-
-    });
-
-
-    if(visibleCount === 0){
-
-        noResults.style.display = "block";
-
-    }else{
-
-        noResults.style.display = "none";
-
-    }
-
-}
-
-
-/* SEARC
+d
