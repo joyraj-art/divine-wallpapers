@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mahadev Wallpapers | HD, 4K & AMOLED Shiva Wallpapers</title>
+<title>Mahadev Wallpapers | HD, 4K & Shiva Mobile Wallpapers</title>
 
 <meta name="description"
-content="Download free HD, Full HD, 4K and AMOLED Mahadev Shiva wallpapers for your mobile phone. Explore beautiful Lord Shiva devotional wallpapers.">
+content="Download free Mahadev and Lord Shiva wallpapers in HD, Full HD and 4K. Explore powerful and peaceful Shiva wallpapers for mobile phones.">
+
+<meta name="keywords"
+content="Mahadev wallpapers, Mahadev HD wallpapers, Mahadev 4K wallpapers, Lord Shiva wallpapers, Shiva mobile wallpapers, Bholenath wallpapers, Shiv wallpapers, Mahakal wallpapers, Hindu devotional wallpapers">
 
 <meta name="robots" content="index, follow">
 
@@ -15,17 +20,25 @@ content="Download free HD, Full HD, 4K and AMOLED Mahadev Shiva wallpapers for y
 href="https://joyraj-art.github.io/divine-wallpapers/mahadev-wallpapers.html">
 
 <style>
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #000;
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
+
+/* HEADER */
 
 header {
     text-align: center;
@@ -34,47 +47,110 @@ header {
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.subtitle {
+header p {
     color: #999;
-    margin-top: 8px;
 }
+
+/* NAVIGATION */
+
+.navigation {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    overflow-x: auto;
+}
+
+.navigation a {
+    flex-shrink: 0;
+    display: inline-block;
+    padding: 9px 15px;
+    border: 1px solid #333;
+    border-radius: 22px;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navigation a:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* MAIN */
 
 .container {
     max-width: 1100px;
     margin: auto;
-    padding: 25px 15px;
+    padding: 20px 15px;
 }
 
-.intro {
-    max-width: 800px;
-    margin: 20px auto 30px;
-    text-align: center;
-    color: #aaa;
+/* BACK BUTTON */
+
+.back {
+    display: inline-block;
+    margin-bottom: 25px;
+    padding: 10px 17px;
+    border: 1px solid #333;
+    border-radius: 22px;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
 }
+
+.back:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* TITLE */
+
+.page-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.page-title h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #999;
+}
+
+/* WALLPAPERS */
 
 .wallpapers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+    margin-top: 30px;
 }
+
+/* CARD */
 
 .card {
     background: #111;
     border: 1px solid #222;
-    border-radius: 16px;
+    border-radius: 15px;
     overflow: hidden;
-    padding-bottom: 12px;
 }
 
 .card img {
+    display: block;
     width: 100%;
     aspect-ratio: 9 / 16;
     object-fit: cover;
-    display: block;
+    cursor: pointer;
 }
 
 .card-content {
@@ -82,31 +158,54 @@ header {
 }
 
 .card h2 {
-    font-size: 17px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
+
+/* BUTTON */
 
 .download {
     display: block;
     width: 100%;
+    padding: 11px 8px;
+    background: #fff;
+    color: #000;
     text-align: center;
     text-decoration: none;
-    background: white;
-    color: black;
-    padding: 12px 8px;
-    border-radius: 9px;
+    font-size: 14px;
     font-weight: bold;
+    border-radius: 8px;
 }
 
-.back {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 11px 20px;
-    border: 1px solid #444;
-    border-radius: 25px;
-    color: white;
-    text-decoration: none;
+.download:hover {
+    background: #ddd;
 }
+
+/* SEO CONTENT */
+
+.seo-content {
+    max-width: 850px;
+    margin: 45px auto 20px;
+    color: #aaa;
+}
+
+.seo-content h2 {
+    color: #fff;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.seo-content h3 {
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+.seo-content p {
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
 
 footer {
     text-align: center;
@@ -116,56 +215,115 @@ footer {
     color: #777;
 }
 
+/* MOBILE */
+
 @media (min-width: 700px) {
+
     .wallpapers {
         grid-template-columns: repeat(4, 1fr);
     }
+
 }
+
+@media (max-width: 380px) {
+
+    .page-title h1 {
+        font-size: 25px;
+    }
+
+    .download {
+        font-size: 12px;
+    }
+
+}
+
 </style>
+
 </head>
 
 <body>
 
 <header>
 
-<div class="logo">🔱 Mahadev Wallpapers</div>
+<div class="logo">
+🕉️ Divine Wallpapers
+</div>
 
-<p class="subtitle">
-HD • Full HD • 4K • AMOLED Shiva Wallpapers
+<p>
+HD • Full HD • 4K • Mahadev Wallpapers
 </p>
 
 </header>
 
 
+<!-- NAVIGATION -->
+
+<nav class="navigation">
+
+<a href="index.html">
+🏠 Home
+</a>
+
+<a href="mahadev-wallpapers.html">
+🔱 Mahadev
+</a>
+
+<a href="hanuman-wallpapers.html">
+🚩 Hanuman
+</a>
+
+<a href="shree-ram-wallpapers.html">
+🏹 Shree Ram
+</a>
+
+<a href="krishna-wallpapers.html">
+🦚 Sri Krishna
+</a>
+
+<a href="amoled-wallpapers.html">
+🌑 AMOLED
+</a>
+
+</nav>
+
+
 <main class="container">
 
-<div class="intro">
+<a class="back" href="index.html">
+← Back to Home
+</a>
 
-<h1>Mahadev Shiva Wallpapers</h1>
+
+<section class="page-title">
+
+<h1>
+🔱 Mahadev Wallpapers
+</h1>
 
 <p>
-Download beautiful Mahadev and Lord Shiva wallpapers
-for your mobile phone. Explore HD, 4K and dark AMOLED-style
-Shiva wallpapers and use your favorite divine image as
-your phone wallpaper.
+Free HD, Full HD and 4K Lord Shiva wallpapers for mobile phones
 </p>
 
-</div>
+</section>
 
 
 <div class="wallpapers">
 
 
+<!-- MAHADEV 01 -->
+
 <article class="card">
 
 <img
 src="mahadev-01.jpg"
-alt="Mahadev Shiva HD mobile wallpaper"
+alt="Mahadev Lord Shiva HD mobile wallpaper"
 loading="lazy">
 
 <div class="card-content">
 
-<h2>Mahadev Shiva Wallpaper</h2>
+<h2>
+Mahadev Shiva HD Wallpaper
+</h2>
 
 <a
 class="download"
@@ -181,16 +339,20 @@ download="Mahadev-Shiva-Wallpaper.jpg">
 </article>
 
 
+<!-- MAHADEV COSMIC -->
+
 <article class="card">
 
 <img
 src="mahadev-cosmic-01.jpg"
-alt="Mahadev Cosmic Shiva 4K wallpaper"
+alt="Mahadev Cosmic Lord Shiva 4K wallpaper"
 loading="lazy">
 
 <div class="card-content">
 
-<h2>Mahadev Cosmic Wallpaper</h2>
+<h2>
+Mahadev Cosmic 4K Wallpaper
+</h2>
 
 <a
 class="download"
@@ -206,16 +368,114 @@ download="Mahadev-Cosmic-Wallpaper.jpg">
 </article>
 
 
+<!-- MAHADEV NIGHT -->
+
+<article class="card">
+
+<img
+src="mahadev-shiva-night.jpg"
+alt="Mahadev Shiva night dark mobile wallpaper"
+loading="lazy">
+
+<div class="card-content">
+
+<h2>
+Mahadev Shiva Night Wallpaper
+</h2>
+
+<a
+class="download"
+href="mahadev-shiva-night.jpg"
+download="Mahadev-Shiva-Night-Wallpaper.jpg">
+
+⬇️ Download Wallpaper
+
+</a>
+
+</div>
+
+</article>
+
+
+<!-- MAHADEV GOLD BLACK -->
+
+<article class="card">
+
+<img
+src="mahadev-gold-black.jpg"
+alt="Mahadev gold black dark wallpaper"
+loading="lazy">
+
+<div class="card-content">
+
+<h2>
+Mahadev Gold Black Wallpaper
+</h2>
+
+<a
+class="download"
+href="mahadev-gold-black.jpg"
+download="Mahadev-Gold-Black-Wallpaper.jpg">
+
+⬇️ Download Wallpaper
+
+</a>
+
+</div>
+
+</article>
+
+
 </div>
 
 
-<a
-class="back"
-href="index.html">
+<!-- SEO CONTENT -->
 
-← Back to Divine Wallpapers
+<section class="seo-content">
 
-</a>
+<h2>
+Mahadev Wallpapers for Mobile
+</h2>
+
+<p>
+Explore our collection of beautiful Mahadev wallpapers
+featuring Lord Shiva in powerful, peaceful and spiritual
+artwork. These wallpapers are designed for mobile phones
+and are available in HD, Full HD and 4K quality.
+</p>
+
+<h3>
+🔱 Lord Shiva Wallpapers
+</h3>
+
+<p>
+Download Lord Shiva wallpapers featuring Mahadev,
+Bholenath and powerful spiritual artwork. Choose your
+favorite wallpaper and use it as your phone background.
+</p>
+
+<h3>
+🌑 Dark Mahadev Wallpapers
+</h3>
+
+<p>
+Discover dark and dramatic Mahadev wallpapers with black
+and cinematic backgrounds. These wallpapers are especially
+suitable for phones with AMOLED displays.
+</p>
+
+<h3>
+📱 Free Mahadev Mobile Wallpapers
+</h3>
+
+<p>
+All wallpapers on this page are available for free download.
+Explore our other devotional collections including Hanuman,
+Shree Ram and Sri Krishna wallpapers.
+</p>
+
+</section>
+
 
 </main>
 
@@ -224,7 +484,12 @@ href="index.html">
 
 © 2026 Divine Wallpapers
 
+<br>
+
+Free HD • 4K • Devotional Wallpapers
+
 </footer>
+
 
 </body>
 </html>
