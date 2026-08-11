@@ -1711,3 +1711,450 @@ footer strong {
     </div>
 
       </div>    
+          <!-- =====================================================
+     END WALLPAPER GRID
+===================================================== -->
+
+</div>
+
+
+<div
+    class="no-results"
+    id="noResults">
+
+    🙏 No wallpapers found.
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FULLSCREEN VIEWER
+===================================================== -->
+
+<div
+    class="viewer"
+    id="viewer">
+
+
+    <button
+        type="button"
+        class="close-viewer"
+        id="closeViewer"
+        aria-label="Close fullscreen">
+
+        ×
+
+    </button>
+
+
+    <img
+        id="viewerImage"
+        class="viewer-image"
+        src=""
+        alt="Wallpaper Preview"
+    >
+
+
+    <a
+        id="viewerDownload"
+        class="viewer-download"
+        href=""
+        download>
+
+        ⬇ Download Wallpaper
+
+    </a>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <p>
+
+        <strong>
+            ॐ Divine Wallpapers
+        </strong>
+
+    </p>
+
+
+    <p style="margin-top:7px;">
+
+        HD • Full HD • 4K • AMOLED • Hindu Devotional Wallpapers
+
+    </p>
+
+
+    <p style="margin-top:10px;">
+
+        Made with devotion ❤️
+
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+/* =====================================================
+   GET ELEMENTS
+===================================================== */
+
+const searchInput =
+    document.getElementById("searchInput");
+
+const cards =
+    document.querySelectorAll(".card");
+
+const categoryButtons =
+    document.querySelectorAll(".category");
+
+const noResults =
+    document.getElementById("noResults");
+
+const viewer =
+    document.getElementById("viewer");
+
+const viewerImage =
+    document.getElementById("viewerImage");
+
+const viewerDownload =
+    document.getElementById("viewerDownload");
+
+const closeViewer =
+    document.getElementById("closeViewer");
+
+
+let selectedCategory = "all";
+
+
+/* =====================================================
+   FILTER WALLPAPERS
+===================================================== */
+
+function filterWallpapers() {
+
+    const searchText =
+        searchInput.value
+        .toLowerCase()
+        .trim();
+
+    let visibleCount = 0;
+
+
+    cards.forEach(function(card) {
+
+        const title =
+            (
+                card.getAttribute("data-title") || ""
+            ).toLowerCase();
+
+
+        const category =
+            (
+                card.getAttribute("data-category") || ""
+            ).toLowerCase();
+
+
+        const categoryMatch =
+            selectedCategory === "all" ||
+            category.includes(
+                selectedCategory.toLowerCase()
+            );
+
+
+        const searchMatch =
+            searchText === "" ||
+            title.includes(searchText) ||
+            category.includes(searchText);
+
+
+        if (
+            categoryMatch &&
+            searchMatch
+        ) {
+
+            card.style.display = "";
+
+            visibleCount++;
+
+        } else {
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+
+    if (visibleCount === 0) {
+
+        noResults.style.display = "block";
+
+    } else {
+
+        noResults.style.display = "none";
+
+    }
+
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+searchInput.addEventListener(
+    "input",
+    filterWallpapers
+);
+
+
+/* =====================================================
+   CATEGORY BUTTONS
+===================================================== */
+
+categoryButtons.forEach(function(button) {
+
+    button.addEventListener(
+        "click",
+        function() {
+
+            selectedCategory =
+                this.getAttribute(
+                    "data-category"
+                );
+
+
+            categoryButtons.forEach(
+                function(btn) {
+
+                    btn.classList.remove(
+                        "active"
+                    );
+
+                }
+            );
+
+
+            this.classList.add("active");
+
+
+            filterWallpapers();
+
+        }
+    );
+
+});
+
+
+/* =====================================================
+   OPEN FULLSCREEN VIEWER
+===================================================== */
+
+function openViewer(
+    imageSource,
+    imageTitle
+) {
+
+    viewerImage.src =
+        imageSource;
+
+
+    viewerImage.alt =
+        imageTitle ||
+        "Wallpaper Preview";
+
+
+    viewerDownload.href =
+        imageSource;
+
+
+    viewer.classList.add(
+        "show"
+    );
+
+
+    document.body.style.overflow =
+        "hidden";
+
+}
+
+
+/* =====================================================
+   FULLSCREEN BUTTONS
+===================================================== */
+
+const fullscreenButtons =
+    document.querySelectorAll(
+        ".fullscreen"
+    );
+
+
+fullscreenButtons.forEach(
+    function(button) {
+
+        button.addEventListener(
+            "click",
+            function(event) {
+
+                event.preventDefault();
+
+                event.stopPropagation();
+
+
+                const image =
+                    this.getAttribute(
+                        "data-image"
+                    );
+
+
+                const title =
+                    this.getAttribute(
+                        "data-title"
+                    );
+
+
+                openViewer(
+                    image,
+                    title
+                );
+
+            }
+        );
+
+    }
+);
+
+
+/* =====================================================
+   CLICK WALLPAPER IMAGE
+===================================================== */
+
+const wallpaperImages =
+    document.querySelectorAll(
+        ".wallpaper-image"
+    );
+
+
+wallpaperImages.forEach(
+    function(image) {
+
+        image.addEventListener(
+            "click",
+            function() {
+
+                openViewer(
+                    this.getAttribute(
+                        "src"
+                    ),
+                    this.getAttribute(
+                        "alt"
+                    )
+                );
+
+            }
+        );
+
+    }
+);
+
+
+/* =====================================================
+   CLOSE FULLSCREEN
+===================================================== */
+
+function closeImageViewer() {
+
+    viewer.classList.remove(
+        "show"
+    );
+
+
+    viewerImage.src = "";
+
+
+    viewerDownload.href = "";
+
+
+    document.body.style.overflow =
+        "";
+
+}
+
+
+/* CLOSE BUTTON */
+
+closeViewer.addEventListener(
+    "click",
+    closeImageViewer
+);
+
+
+/* =====================================================
+   CLICK OUTSIDE IMAGE
+===================================================== */
+
+viewer.addEventListener(
+    "click",
+    function(event) {
+
+        if (
+            event.target === viewer
+        ) {
+
+            closeImageViewer();
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   ESCAPE KEY
+===================================================== */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (
+            event.key === "Escape"
+        ) {
+
+            closeImageViewer();
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   INITIAL FILTER
+===================================================== */
+
+filterWallpapers();
+
+</script>
+
+
+</body>
+
+</html>
